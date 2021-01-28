@@ -52,7 +52,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link.header__button {
   color: #fa7803;
-  border: 2px solid #fa7803;
+  border: 1px solid #fa7803;
   letter-spacing: 0.43px;
   padding: 0px 6px 1px;
   font-size: 14px;
@@ -158,6 +158,9 @@ body {
   .navbar-light .navbar-nav .nav-link {
     font-size: 13px;
     padding: 0px 7px;
+  }
+  .navbar-light .navbar-nav .nav-link.header__button {
+    font-size: 13px;
   }
   .languages {
     left: 155px;
@@ -275,7 +278,7 @@ body {
 
 .banner {
   min-height: 410px;
-  background: #FFCF9E;
+  background: #fbf4ed;
   border-bottom: 1px solid #c9c9c9;
   padding-top: 75px;
 }
@@ -357,7 +360,8 @@ body {
 @media (max-width: 991px) {
   .banner__select {
     width: 100%;
-    border: none;
+    border: 1px solid #fa7803;
+    border-bottom: 0;
   }
   .banner__button {
     width: 100%;
