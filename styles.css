@@ -1529,14 +1529,16 @@ body {
   padding-right: 0px;
 }
 
-.section.withnopadding {
+.section.withonlybottompadding {
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 0px;
 }
 
-.section.withnopadding .section__header {
-  padding-right: 15px;
-  padding-left: 40px;
+.section.withonlybottompadding .section__header {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0px;
+  padding: 25px 15px 23px 40px;
 }
 
 .section.stats {
@@ -1631,7 +1633,8 @@ body {
   .section.withmorepadding {
     padding: 22px 15px 30px;
   }
-  .section.withnopadding .section__header {
+  .section.withonlybottompadding .section__header {
+    padding-top: 22px;
     padding-right: 15px;
     padding-left: 15px;
   }
