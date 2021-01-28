@@ -2,33 +2,17 @@
     background: white 
     border: solid 1px #e6e6e6
     border-radius: 6px
-    padding: 25px 15px 30px 40px
+    padding-bottom: 30px
     margin-top: 25px
-    &.withmorepadding
-        padding-top: 30px
-        padding-bottom: 50px
-    &.withlesspadding
-        padding-left: 0px
-        padding-right: 0px
-    &.withonlybottompadding
-        padding-left: 0px
-        padding-right: 0px
-        padding-top: 0px
-        .section__header
-            border-bottom: 1px solid #e6e6e6
-            margin-bottom: 0px
-            padding: 25px 15px 23px 40px
-    &.stats
-        padding-left: 40px
-        padding-right: 40px
-        padding-bottom: 27px
     &__header
         font-size: 26px
         font-weight: 400
         letter-spacing: 0.69px
         color: #000000
         margin-top: 0px
-        margin-bottom: 23px
+        border-bottom: 1px solid #e6e6e6
+        margin-bottom: 0px
+        padding: 25px 15px 23px 40px
     &__interaction
         padding-top: 50px
         padding-bottom: 10px
@@ -73,15 +57,7 @@
 // @media (max-width: 1199px)
 
 @media (max-width: 991px)
-    .section
-        padding: 22px 15px 30px
-        &.withmorepadding
-            padding: 25px 15px 40px 40px
-        &.stats
-            padding-left: 15px
-            padding-right: 15px
-            padding-bottom: 0px
-        
+    .section 
         &__interaction
             justify-content: center
         &__header

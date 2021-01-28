@@ -1515,36 +1515,8 @@ body {
   background: white;
   border: solid 1px #e6e6e6;
   border-radius: 6px;
-  padding: 25px 15px 30px 40px;
+  padding-bottom: 30px;
   margin-top: 25px;
-}
-
-.section.withmorepadding {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-.section.withlesspadding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.section.withonlybottompadding {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
-.section.withonlybottompadding .section__header {
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 0px;
-  padding: 25px 15px 23px 40px;
-}
-
-.section.stats {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 27px;
 }
 
 .section__header {
@@ -1553,7 +1525,9 @@ body {
   letter-spacing: 0.69px;
   color: #000000;
   margin-top: 0px;
-  margin-bottom: 23px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0px;
+  padding: 25px 15px 23px 40px;
 }
 
 .section__interaction {
@@ -1607,17 +1581,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  .section {
-    padding: 22px 15px 30px;
-  }
-  .section.withmorepadding {
-    padding: 25px 15px 40px 40px;
-  }
-  .section.stats {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 0px;
-  }
   .section__interaction {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1670,13 +1633,14 @@ body {
 
 .region__list {
   list-style-type: none;
-  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 0px;
+  padding: 23px 15px 25px 40px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .region__flag {
@@ -1698,24 +1662,14 @@ body {
 
 .region__item {
   line-height: 19px;
-  width: 33%;
+  width: 20%;
   margin-bottom: 7px;
   padding-right: 10px;
 }
 
-.region__morelink {
-  font-size: 12px;
-  color: #fa7803;
-}
-
-.region__morelink:hover {
-  text-decoration: underline;
-  color: #fa7803;
-}
-
 @media (max-width: 991px) {
   .region__item {
-    width: 50%;
+    width: 33%;
   }
   .region__link {
     font-size: 14px;
@@ -1731,6 +1685,12 @@ body {
 @media (max-width: 767px) {
   .region__image {
     max-width: 90%;
+  }
+  .region__list {
+    padding-left: 15px;
+  }
+  .region__item {
+    width: 50%;
   }
 }
 
@@ -1934,6 +1894,7 @@ body {
 
 .stats {
   margin-bottom: 60px;
+  padding: 25px 40px;
 }
 
 .stats__item {
@@ -1977,6 +1938,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .stats {
+    padding-bottom: 0px;
+  }
   .stats__item {
     margin-bottom: 30px;
     padding-top: 10px;
@@ -2038,8 +2002,8 @@ body {
   line-height: normal;
   letter-spacing: 0.23px;
   color: #ffffff;
-  padding-top: 9px;
   margin-bottom: 0;
+  padding: 9px 15px 0;
   border-top: 2px solid rgba(216, 216, 216, 0.13);
 }
 
