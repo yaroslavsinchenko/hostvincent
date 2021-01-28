@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Open Sans";
-  font-display: auto;
   font-weight: 400;
   src: url("fonts/OpenSans-Regular.eot?") format("eot"), url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
