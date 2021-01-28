@@ -308,6 +308,9 @@ body {
   background-position: center left 8px;
   background-repeat: no-repeat;
   background-size: 25px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .banner__select:nth-child(1) {
