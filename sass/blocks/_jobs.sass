@@ -1,0 +1,81 @@
+.jobs
+    &__photo
+        &-link
+            width: 80px
+            height: 80px
+            border-radius: 10px
+            border: 1px solid #979797
+            display: flex
+            align-items: center 
+            justify-content: center
+        &-image
+            max-width: 93%
+    &__item
+        padding-top: 30px
+        padding-bottom: 40px
+        border-bottom: 1px solid #e8e8e8
+    &__header
+        font-size: 19px
+        font-weight: 400
+        letter-spacing: 1.1px
+        color: $orange
+        margin: 0
+        &:hover 
+            color: $orange
+            text-decoration: underline
+    &__content
+        padding-left: 20px
+    &__tags
+        // padding: 10px 0px
+        margin-top: 2px
+        display: flex
+        flex-wrap: wrap
+    &__tag
+        padding-right: 44px
+        &-image
+            margin-right: 1px
+            height: 11px
+            width: auto
+        &-text 
+            display: inline
+            margin: 0
+            font-size: 13px
+            letter-spacing: 0.35px
+            color: #364955
+    &__text
+        font-size: 16px
+        color: #353535
+        letter-spacing: 0.43px
+        line-height: 22px
+        margin: 0
+        margin-top: 6px
+
+
+// @media (min-width: 1200px)
+
+@media (max-width: 1199px)
+    .jobs
+        &__content
+            padding-left: 35px
+
+@media (max-width: 991px)
+    .jobs
+        &__content
+            padding-left: 5px
+
+@media (max-width: 767px)
+    .jobs
+        &__photo-col
+            display: none
+        &__content
+            padding-left: 0px
+        &__item
+            padding: 16px 0px
+        &__text
+            display: none
+        &__tags
+            flex-direction: column
+
+// @media (max-width: 575px)
+
+// @media (max-width: 359px)

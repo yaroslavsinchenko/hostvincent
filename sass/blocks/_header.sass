@@ -1,0 +1,194 @@
+.header
+    position: fixed
+    padding-top: 5px
+    padding-bottom: 5px
+    z-index: 50
+    background: white 
+    min-height: 75px
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    border-bottom: 1px solid #c9c9c9
+    &__icon
+        max-width: 13px
+        margin-right: 3px
+    &__logo
+        max-width: 156px
+        margin-right: 15px
+        
+.nav-item
+    text-align: center
+.navbar-light .navbar-nav .nav-link
+    color: black
+    font-size: 15px
+    padding: 0px 13px
+    text-align: center
+    display: inline-block
+    &:hover 
+        color: black
+        &.withunderline
+            text-decoration: underline
+    &.withborder
+        border-right: 1px solid #e6e6e6
+    &.header__button
+        color:#fa7803
+        border: 2px solid #fa7803
+        letter-spacing: 0.43px
+        padding: 0px 6px 1px
+        font-size: 14px
+        margin: 0px 5px
+        border-radius: 4px
+        transform: translateY(-1px)
+        &:hover 
+            color: white 
+            background: #fa7803
+            text-decoration: none
+.navbar
+    padding-left: 0px
+    padding-right: 0px
+
+.languages
+    display: flex
+    align-items: flex-start
+    padding: 5px 0px
+    border: 1px solid transparent
+    position: absolute
+    left: 180px
+    top: 14px
+    z-index: 100
+    background: white
+    &__icon
+        height: 18px
+        opacity: 0.6
+        position: absolute
+        left: 10px
+        top: 9px
+    &__link
+        text-decoration: none 
+        color: #aaa8a8
+        font-size: 14px
+        display: none
+        padding: 8px 17px 8px 35px
+
+        &.active 
+            color: #aaa8a8
+            display: block
+            padding: 3px 17px 5px 35px
+            &:hover 
+                text-decoration: none
+                background: white 
+                color: #aaa8a8
+        &.mobile
+            display: none  
+        &:hover 
+            text-decoration: none 
+            background: #fa7803
+            color: white
+    &__nav
+        display: flex
+        flex-direction: column
+    &:hover 
+        border: 1px solid #e6e6e6
+        border-radius: 5px
+        .languages__link
+            display: block
+            &.desc
+                display: block 
+            &.mobile
+                display: none
+
+
+
+@media (max-width: 1199px)
+    .navbar-light .navbar-nav .nav-link
+        font-size: 13px
+        padding: 0px 7px
+    .languages
+        left: 165px
+        top: 12px
+    .header
+        &__logo
+            max-width: 139px
+
+@media (max-width: 991px)
+    .navbar-light .navbar-nav .nav-link
+        font-size: 19px
+        margin: 9px 0px
+        position: relative
+        &.withborder
+            border: none
+        &.header__button
+            margin: 9px 0px
+            font-size: 19px
+            padding: 0px 12px
+    .navbar-collapse
+        padding: 10px 0px 20px
+        position: absolute
+        top: 70px
+        width: 100vw
+        transition: none
+        background: white
+        border-top: 1px solid #c9c9c9
+        border-bottom: 1px solid #c9c9c9
+    .header
+        &__icon
+            position: absolute
+            left: 0px
+            left: -26px
+            top: 13%
+            max-width: 27px
+            max-height: 20px
+        &__logo
+            max-width: 154px
+            margin-right: 0px
+    .navbar-brand
+        margin-right: 0px
+    .navbar-toggler
+        position: absolute
+        right: 0px
+        top: 12px
+    .navbar
+        justify-content: center
+    
+    .languages
+        left: -10px
+
+        &__link
+            &.desc
+                display: none
+            &.mobile
+                display: block
+// @media (max-width: 767px)
+
+@media (max-width: 575px)
+    .navbar
+        padding-left: 0px
+        padding-right: 0px
+    .languages
+        &__link
+            padding: 8px 17px 8px 30px
+            &.active 
+                padding: 3px 17px 5px 30px
+        &:hover 
+            .languages__link
+                &.desc
+                    display: none 
+                &.mobile
+                    display: block
+        &__icon
+            left: 8px
+    .navbar-toggler
+        right: 0px
+    .header
+        &__logo
+            transform: translateX(-8px)
+
+@media (max-width: 359px)
+    .header
+        min-height: 70px
+        &__logo
+            max-width: 135px
+        .navbar-toggler
+            top: 9px
+        .languages
+            top: 10px

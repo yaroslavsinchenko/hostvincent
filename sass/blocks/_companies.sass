@@ -1,0 +1,76 @@
+.companies
+    position: relative
+    &__row
+        &::before
+            position: absolute
+            content: ''
+            width: 28px
+            height: 100%
+            background: #fff
+            z-index: 1
+        &::after
+            position: absolute
+            content: ''
+            width: 28px
+            height: 100%
+            right: 0px
+            background: #fff
+            z-index: 1
+    &__item
+        border-bottom: 1px solid #e6e6e6
+        border-right: 1px solid #e6e6e6
+        padding-bottom: 25px
+        padding-top: 25px
+    &__image
+        width: 72px
+        z-index: 2
+        &-container
+            min-height: 72px
+            z-index: 2
+            display: flex
+            align-items: center 
+            justify-content: center
+    &__link
+        display: flex
+        flex-direction: column 
+        align-items: center
+        &:hover 
+            text-decoration: none
+            .companies__name
+                text-decoration: underline
+    &__name
+        font-size: 13px
+        letter-spacing: 0.38px
+        margin: 0px
+        margin-top: 4px
+        color: $orange  
+        z-index: 2
+        &:hover 
+            color: $orange
+    &__jobs
+        font-size: 13px
+        letter-spacing: 0.38px
+        margin: 0px
+        color: #353535
+        z-index: 2
+        &:hover 
+            color: #353535
+            text-decoration: none
+    &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 70px
+        top: 0
+        background: #fff
+        z-index: 1
+        left: 0
+    &::after 
+        position: absolute
+        content: ''
+        width: 100%
+        height: 70px
+        bottom: 0
+        background: #fff
+        z-index: 1
+        left: 0

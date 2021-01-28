@@ -1,0 +1,75 @@
+.text 
+    padding-top: 15px
+    
+    &__header
+        font-size: 32px
+        font-weight: 600
+        letter-spacing: 0.5px
+        line-height: normal
+        margin-bottom: 15px
+        color: #111111
+        margin-top: 25px
+    &__subheader
+        font-size: 24px
+        font-weight: 600 
+        letter-spacing: 0.5px
+        line-height: normal
+        margin-bottom: 15px
+        color: #111111
+        margin-top: 25px
+    &__par
+        font-size: 18px
+        letter-spacing: 0.48px
+        line-height: normal
+        color: #26323b
+        margin-bottom: 15px
+        &.small 
+            font-size: 16px
+            
+    &__link
+        font-size: 18px
+        line-height: 1.33
+        letter-spacing: 0.48px
+        color: $orange
+        &:hover
+            text-decoration: underline
+            color: $orange
+    &__readmore
+        font-size: 16px
+        color: $orange
+        margin-top: 20px
+        margin-bottom: 0px
+        &:hover 
+            cursor: pointer
+            text-decoration: underline
+    &__content
+        display: none
+        &.show 
+            display: block
+
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .text
+        &__par
+            font-size: 16px
+        &__subheader
+            font-size: 20px
+        &__header
+            font-size: 25px
+            line-height: 30px
+
+
+// @media (max-width: 767px)
+
+@media (max-width: 575px)
+    .text
+        &__header
+            font-size: 23px
+            line-height: 28px
+        &__subheader
+            font-size: 19px
+
+// @media (max-width: 359px)

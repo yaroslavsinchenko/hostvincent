@@ -1,0 +1,107 @@
+.section
+    background: white 
+    border: solid 1px #e6e6e6
+    border-radius: 6px
+    padding: 25px 15px 30px 40px
+    margin-top: 25px
+    &.withmorepadding
+        padding-top: 30px
+        padding-bottom: 50px
+    &.withlesspadding
+        padding-left: 5px
+        padding-right: 5px
+    &.stats
+        padding-left: 40px
+        padding-right: 40px
+        padding-bottom: 27px
+    &__header
+        font-size: 26px
+        font-weight: 400
+        letter-spacing: 0.69px
+        color: #000000
+        margin-top: 0px
+        margin-bottom: 23px
+        &.compsection
+            margin-bottom: 0
+            margin-left: 40px
+    &__interaction
+        padding-top: 50px
+        padding-bottom: 10px
+    &__button
+        width: 243px
+        max-width: 45%
+        display: inline-block 
+        text-align: center
+        padding: 16px 0px
+        letter-spacing: 0.43px
+        border-radius: 2px
+        border: 2px solid $orange
+        color: $orange
+
+        &:hover 
+            background: $orange
+            color: white
+            text-decoration: none
+        &.bgorange   
+            background: $orange
+            color: white 
+            margin-right: 10px
+            &:hover 
+                background: $hoverorange
+                border-color: $hoverorange
+                color: white
+                text-decoration: none
+    &__link
+        padding-top: 26px
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.63
+        letter-spacing: 4px
+        display: inline-block
+        color: $orange
+        &:hover 
+            color: $orange
+        
+        
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .section
+        padding: 22px 15px 30px
+        &.withmorepadding
+            padding: 25px 15px 40px 40px
+        &.stats
+            padding-left: 15px
+            padding-right: 15px
+            padding-bottom: 0px
+        
+        &__interaction
+            justify-content: center
+        &__header
+            &.compsection
+                margin-left: 15px
+                margin-bottom: 30px
+
+@media (max-width: 767px)
+    .section
+        &.withmorepadding
+            padding: 22px 15px 30px
+        &__interaction
+            padding-top: 35px
+            flex-direction: column 
+            align-items: center
+        &__button
+            max-width: 100%
+            &.bgorange
+                margin-right: 0px
+                margin-bottom: 20px
+
+@media (max-width: 575px)
+    .section
+        &__header
+            text-align: center
+            font-size: 24px
+
+// @media (max-width: 359px)

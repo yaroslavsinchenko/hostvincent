@@ -1,0 +1,62 @@
+.region
+    &__image
+        max-width: 100%
+    &__list
+        list-style-type: none
+        padding-left: 0px
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 0px
+    &__flag
+        display: inline-block
+        width: 16px
+        height: 11px
+    &__link
+        line-height: normal
+        font-size: 12.5px
+        color: black 
+        &:hover 
+            text-decoration: underline
+            color: $orange
+    &__item
+        line-height: 19px
+        width: 33%
+        margin-bottom: 7px
+        padding-right: 10px
+    &__morelink
+        font-size: 12px
+        color: $orange
+        &:hover 
+            text-decoration: underline 
+            color: $orange
+ 
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .region
+        &__item
+            width: 50%
+        &__link
+            font-size: 14px
+        &__morelink
+            font-size: 14px
+        &__image
+            max-width: 80%
+
+@media (max-width: 767px)
+    .region
+        &__image
+            max-width: 90%
+
+@media (max-width: 575px)
+    .region
+        &__image
+            max-width: 95%
+
+
+@media (max-width: 359px)
+    .region
+        &__image
+            max-width: 100%

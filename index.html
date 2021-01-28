@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="images/main-logo.png" class="header__logo" alt="logo" />
+          </a>
+          <div class="languages">
+            <div class="languages__nav">
+              <a href="" class="languages__link active desc">
+                <img
+                  src="images/globe.png"
+                  alt="globe"
+                  class="languages__icon"
+                />
+                English
+              </a>
+              <a href="" class="languages__link active mobile">
+                <img
+                  src="images/globe.png"
+                  alt="globe"
+                  class="languages__icon"
+                />
+                EN
+              </a>
+              <a href="" class="languages__link"> English </a>
+              <a href="" class="languages__link"> Nederlands </a>
+              <a href="" class="languages__link"> German </a>
+              <a href="" class="languages__link"> Français </a>
+              <a href="" class="languages__link"> Italiano </a>
+              <a href="" class="languages__link"> Polski </a>
+              <a href="" class="languages__link"> Español </a>
+              <a href="" class="languages__link"> Hànyǔ </a>
+              <a href="" class="languages__link"> Russian </a>
+              <a href="" class="languages__link"> Portuguese </a>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link withborder withunderline" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link withborder withunderline" href="#"
+                  >Browse Jobs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link withunderline" href="#">Add your Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__button" href="#"
+                  >International Recruitment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link withborder" href="#">
+                  <img src="images/register.png" class="header__icon" />
+                  Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/login.png" class="header__icon" />
+                  Log In
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- SEARCH BANNER -->
+    <div class="banner d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <div class="banner__content">
+              <h1 class="banner__header">
+                Search Jobs Abroad: If you are looking for international jobs,
+                multilingual jobs or work abroad
+              </h1>
+              <div class="banner__form">
+                <select class="banner__select">
+                  <option selected>Select a keyword</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+
+                <select class="banner__select">
+                  <option selected>Select a language</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+
+                <select class="banner__select">
+                  <option selected>Select a country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+
+                <button class="banner__button">Find jobs</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- READ MORE TEXT -->
+    <div class="container text">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text__header">
+            Search Jobs Abroad: Work Abroad and Find International Jobs world
+            wide!
+          </h2>
+          <p class="text__par small">
+            We are an international jobboard for exclusively foreign work,
+            international jobs and multilingual vacancies. Find a job abroad and
+            start an international career with attractive companies. Find your
+            dream job abroad and apply directly to the employer.
+          </p>
+          <div class="text__content" id="content">
+            <p class="text__par small">
+              Jobs in <a href="" class="text__link">France</a>,
+              <a href="" class="text__link">Spain</a>,
+              <a href="" class="text__link">Australia</a>,
+              <a href="" class="text__link">China</a>,
+              <a href="" class="text__link">Germany</a>,
+              <a href="" class="text__link">Portugal</a> and
+              <a href="" class="text__link">25 other countries</a>.
+            </p>
+            <p class="text__par small">
+              Search Jobs Abroad for international talent and companies that
+              recruit across land borders or recruit multilingual employees
+              worldwide. To match the supply and demand of international work.
+              Search Jobs Abroad was founded in 2008. We help talent to find
+              international jobs and multilingual vacancies! Apply online via
+              the international jobboard for global jobs.
+            </p>
+            <h3 class="text__subheader">Why abroad?</h3>
+            <p class="text__par">
+              Go for a challenge abroad. You can earn money, travel, meet other
+              interesting people and apply for attractive international work.
+            </p>
+            <h3 class="text__subheader">Branches abroad</h3>
+            <p class="text__par">
+              As in your country, you will also find vacancies abroad in the
+              fields of technology, IT, care, management, finance, marketing,
+              call centre, logistics, sales, medical and legal.
+            </p>
+            <h3 class="text__subheader">Countries abroad</h3>
+            <p class="text__par">
+              If you are going to work abroad, it is important to find out what
+              the standards and values of the country are, whether the climate
+              suits your wishes and the popularity among expats.
+            </p>
+            <h3 class="text__subheader">Rules abroad</h3>
+            <p class="text__par">
+              The rules abroad vary from country to country. Make sure you have
+              done your research before you accept a job abroad.
+            </p>
+            <h3 class="text__subheader">Multilingual vacancies</h3>
+            <p class="text__par">
+              If you speak fluent Dutch, French, Spanish, Italian, Portuguese,
+              German or any other language, you can often work for international
+              companies as a multilingual specialist.
+            </p>
+            <h3 class="text__subheader">Jobs abroad</h3>
+            <p class="text__par">
+              Be prepared to experience other cultures but always be yourself.
+              Many expatriates also choose an international city with a lot of
+              expatriates. Don't forget to contact the locals as well.
+            </p>
+            <h2 class="text__header">
+              Finding an international job abroad via Search Jobs Abroad
+            </h2>
+            <p class="text__par">
+              Do you want to work in an international company or are you looking
+              for multilingual vacancies abroad? Our international jobboard
+              helps to find the right job abroad or international talent. Search
+              Jobs Abroad focuses on highly trained staff who aspire to an
+              international career, but also for jobseekers who do not want to
+              work abroad but speak a specific language (native speakers or
+              multilingual) we help them to find work.
+            </p>
+            <h3 class="text__subheader">
+              Below you can read the practical experiences of people who have
+              already found a vacancy abroad:
+            </h3>
+            <p class="text__par">
+              Barcelona: I am Patricia and wanted to go abroad. Preferably in a
+              coastal location in Spain. Meanwhile, a nice job has been found.
+              This website was the first time I came across it last summer.
+              Since then, I have had interesting contacts with employers and
+              continue to visit this site regularly for work abroad. Get your
+              chance! Ciao!!
+            </p>
+            <p class="text__par">
+              Berlin: My name is Richard (34 years old) and lived in Germany for
+              3 years. When I was in high school I wanted to go abroad to gain
+              international experience. I was 17 when I went looking and worked
+              in France, Italy and Germany. Soon I felt that this really was my
+              thing. After my studies in Commercial Economics, I left for
+              Germany. I worked there for over 3 years in Berlin (metallurgy
+              processing sector). Working abroad is a fantastic experience even
+              though it wasn't far away for me.
+            </p>
+            <p class="text__par">
+              Milan: We are Francien & Vincent and came to this website last
+              April by chance, which was filled with vacancies abroad. That's
+              why we thought it would be nice to start looking for employers via
+              this vacancy bank. We also noticed that Search Job Job Abroad is
+              kept up to date so that you are constantly informed about new jobs
+              abroad. A job vacancy abroad is a fun experience and certainly a
+              must if you don't know what to do (like us) after a long period of
+              study. At the moment I am still working abroad (Italy) but that
+              may be different next year. If you're young like us (22 and 24
+              years old) you just have to take that chance!
+            </p>
+            <p class="text__par">
+              Gran Canaria: My name is Bert (28 years old) and at the end of
+              2009 I graduated in business science. I didn't really feel like
+              looking for a serious job right away. The solution for me was
+              simple, looking for jobs abroad. Via Search Jobs Jobs Abroad I got
+              to the right track and immediately came into contact with 10
+              different employers. In the end I chose to go to Gran Canaria
+              (Spain) myself. The weather here is already fantastic and the
+              whole year is a party! The step abroad was a nice phase in my life
+              but in six months' time I want to go back home.
+            </p>
+            <p class="text__par">
+              Berlin: After 15 years of being with a loyal boss, I finally
+              grabbed my suitcases and went looking for an international
+              vacancy. Working outside my country was always a dream for me, but
+              impossible because my (former) wife didn't want it. At the
+              beginning of 2008, we were separated. I remember very well saying
+              to myself in the summer of 2009 that I had to check my dreams and
+              not fall by the wayside. Via the internet I went looking for
+              vacancies abroad. I ended up on this site, really an ideal job
+              vacancy system.
+            </p>
+            <p class="text__par">
+              Paris: Thanks to your good idea of creating this website, I was
+              able to get started abroad. First of all, many thanks for
+              this!Paris: is the city of love but for me the ideal city for a
+              foreign job. I worked at a translation agency for 4 years. I speak
+              fluent German and they could use it in France. After 4 years I
+              wanted to work a bit different from working abroad. Unfortunately,
+              it was not possible to continue my work elsewhere. In the end I
+              returned to home. If you want to gain experience abroad, I would
+              definitely try it through Search Jobs Jobs Abroad!
+            </p>
+            <p class="text__par">
+              Paris: Have you ever had a view of La Tour Eiffel? I do! My name
+              is Patrick and last summer I went looking for a vacancy abroad.
+              Unfortunately, it was a job of 6 months. A company in the
+              insurance sector was looking for someone who wanted to work abroad
+              and stay on customer service for international customers. I found
+              that job via Search Jobs Abroad. This was really something for me
+              and I am very happy to have taken the step. Especially with that
+              beautiful view of La Tour. I have had a fantastic period and
+              especially seen a lot in the city. Paris is huge in size and in
+              half a year you haven't seen a tenth of the city yet. In other
+              words, I will have to do it again. My French language skills have
+              not improved at all, but that was not necessary either, because a
+              lot of English is spoken in Paris. Paris does not have much to do
+              with France. It is simply an international city. I can advise
+              everyone to work abroad and then choose Paris.
+            </p>
+            <p class="text__par">
+              New York - Immediately after my military service as a reserve
+              officer at ITT as an engineer-electronics firm, I was sent to
+              India at the age of 20 for a foreign job vacancy to solve problems
+              in Mumbay, Dehli, Madras, Calcutta etc. I was able to do so. For 3
+              years I have had different experiences. As a young guy without
+              experiences, these three years were a hell, but also a basis of my
+              characterisation and independence. After India it became Costa
+              -Rica, Mexico, Peru, Ecuador, Denmark, Finland and Ireland. So I
+              kept working abroad.
+            </p>
+            <p class="text__par">
+              Twelve years went by and I gave my resignation there because this
+              group was taken over by a French group and where the conditions
+              were not in proportion to the realisations I expected.Thirty days
+              passed and I joined an Italian company specialising in mechanical
+              engineering for the glass industry. As an account manager, over
+              the next 9 years his ups and downs passed smoothly over with his
+              ups and downs as known for someone who has foreign experience.
+              Here I was more focused on the German-speaking countries such as
+              Germany, Austria, Switzerland and Spain for the sale of industrial
+              equipment. A dismissal was inevitable as this company was sold to
+              the Finns, and my feeling for the Finns was low. So; I started
+              applying, and in a very short time came to an Austrian company
+              which was also involved in the construction of highly specialised
+              CNC-controlled production machinery and also for the glass
+              industry.
+            </p>
+            <p class="text__par">
+              Here I ended my career after 10 years of service as an account
+              manager. Because of my experience and contact with different
+              people I now speak 7 languages like Spanish, English, French,
+              German and a bit Danish and Italian.Do you also want to take the
+              step for a job abroad? Then you have now found the right site.
+            </p>
+          </div>
+          <p class="text__readmore" id="readmore">Read more</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGION SECTION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section withmorepadding">
+            <div class="row">
+              <div class="col-12 col-lg-8 col-xl-7">
+                <h2 class="section__header">Choose a city or region</h2>
+                <ul class="region__list">
+                  <li class="region__item">
+                    <span class="region__flag flag flag-au"></span>
+                    <a href="" class="region__link">jobs in Australia</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-cn"></span>
+                    <a href="" class="region__link">jobs in China</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-dk"></span>
+                    <a href="" class="region__link">jobs in Denmark</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-fr"></span>
+                    <a href="" class="region__link">jobs in France</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-de"></span>
+                    <a href="" class="region__link">jobs in Germany</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-gr"></span>
+                    <a href="" class="region__link">jobs in Greece</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-ie"></span>
+                    <a href="" class="region__link">jobs in Ireland</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-it"></span>
+                    <a href="" class="region__link">jobs in Italy</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-nl"></span>
+                    <a href="" class="region__link">jobs in Netherlands</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-no"></span>
+                    <a href="" class="region__link">jobs in Norway</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-pl"></span>
+                    <a href="" class="region__link">jobs in Poland</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-pt"></span>
+                    <a href="" class="region__link">jobs in Portugal</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-es"></span>
+                    <a href="" class="region__link">jobs in Spain</a>
+                  </li>
+                  <li class="region__item">
+                    <span class="region__flag flag flag-gb"></span>
+                    <a href="" class="region__link">jobs in United Kingdom</a>
+                  </li>
+                </ul>
+                <p><a href="" class="region__morelink">More countries ></a></p>
+                <div class="d-flex section__interaction">
+                  <a href="" class="section__button bgorange">Jobs</a>
+                  <a href="" class="section__button">Add your resume</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-xl-5 text-center">
+                <img src="images/world.png" alt="world" class="region__image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOBS SECTION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section">
+            <h2 class="section__header">Latest Jobs</h2>
+            <div class="jobs__item">
+              <div class="row align-items-center">
+                <div class="col-md-2 col-lg-1 jobs__photo-col">
+                  <a href="" class="jobs__photo-link">
+                    <img
+                      src="images/companies/verizon.jpeg"
+                      alt="verizon"
+                      class="jobs__photo-image"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-10 col-lg-11">
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header">
+                        Channel Partner Business Manager
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="jobs__item">
+              <div class="row align-items-center">
+                <div class="col-md-2 col-lg-1 jobs__photo-col">
+                  <a href="" class="jobs__photo-link">
+                    <img
+                      src="images/companies/verizon.jpeg"
+                      alt="verizon"
+                      class="jobs__photo-image"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-10 col-lg-11">
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header">
+                        Channel Partner Business Manager
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="jobs__item">
+              <div class="row align-items-center">
+                <div class="col-md-2 col-lg-1 jobs__photo-col">
+                  <a href="" class="jobs__photo-link">
+                    <img
+                      src="images/companies/verizon.jpeg"
+                      alt="verizon"
+                      class="jobs__photo-image"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-10 col-lg-11">
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header">
+                        Channel Partner Business Manager
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="" class="section__link">View all jobs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPANIES SECTION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section withlesspadding">
+            <h2 class="section__header compsection">Companies</h2>
+            <div class="companies container">
+              <div class="row companies__row">
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/tales.jpeg"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Thales</p>
+                    <p class="companies__jobs">(330 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/ibm.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">IBM</p>
+                    <p class="companies__jobs">(3980 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/microsoft.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Microsoft</p>
+                    <p class="companies__jobs">(54880 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/morgan.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">JPMorgan Chase</p>
+                    <p class="companies__jobs">(1630 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/hp.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">HP</p>
+                    <p class="companies__jobs">(10980 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/uber.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Uber</p>
+                    <p class="companies__jobs">(21490 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/ebay.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Ebay</p>
+                    <p class="companies__jobs">(10 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/tomtom.gif"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Tomtom</p>
+                    <p class="companies__jobs">(1300 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/atlassian.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Atlassian</p>
+                    <p class="companies__jobs">(4870 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/atat.png"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">AT&T</p>
+                    <p class="companies__jobs">(40 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/ge.jpeg"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">General Electric</p>
+                    <p class="companies__jobs">(60 jobs)</p>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-2 companies__item">
+                  <a href="" class="companies__link">
+                    <div class="companies__image-container">
+                      <img
+                        src="images/companies/verizon.jpeg"
+                        alt="tales"
+                        class="companies__image"
+                      />
+                    </div>
+                    <p class="companies__name">Verizon</p>
+                    <p class="companies__jobs">(10740 jobs)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="" class="section__link">View more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS SECTION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section stats">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="stats__item">
+                  <div>
+                    <img
+                      src="images/cards.png"
+                      alt="icon"
+                      class="stats__image"
+                    />
+                  </div>
+                  <div class="stats__info">
+                    <p class="stats__name">Jobs</p>
+                    <p class="stats__value">35760</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="stats__item">
+                  <div>
+                    <img
+                      src="images/people.png"
+                      alt="icon"
+                      class="stats__image people"
+                    />
+                  </div>
+                  <div class="stats__info">
+                    <p class="stats__name">Users</p>
+                    <p class="stats__value">176042</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="stats__item">
+                  <div>
+                    <img
+                      src="images/mapsorange.png"
+                      alt="icon"
+                      class="stats__image"
+                    />
+                  </div>
+                  <div class="stats__info">
+                    <p class="stats__name">Locations</p>
+                    <p class="stats__value">37240+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__section">
+              <div class="footer__item">
+                <h2 class="footer__header">About us</h2>
+                <a href="" class="footer__link">About Search Jobs Abroad</a>
+                <a href="" class="footer__link">Blog</a>
+                <a href="" class="footer__link">Contact</a>
+                <a href="" class="footer__link">Terms</a>
+                <a href="" class="footer__link">Privacy</a>
+              </div>
+              <div class="footer__item">
+                <h2 class="footer__header">Candidate</h2>
+                <a href="" class="footer__link">Search Jobs</a>
+                <a href="" class="footer__link">Upload Resume</a>
+                <a href="" class="footer__link">Countries</a>
+              </div>
+              <div class="footer__item">
+                <h2 class="footer__header">Employer</h2>
+                <a href="" class="footer__link">International Recruitment</a>
+                <a href="" class="footer__link">Search resumes</a>
+              </div>
+              <div class="footer__item">
+                <h2 class="footer__header">International career?</h2>
+                <a href="" class="footer__link"> Werken in het buitenland (NL) </a>
+                <a href="" class="footer__link"> Jobs Abroad (EN) </a>
+                <a href="" class="footer__link"> Arbeiten im ausland (DE) </a>
+                <a href="" class="footer__link"> Travailler à l'étranger(FR) </a>
+                <a href="" class="footer__link"> Trabajos en Extranjero (ES) </a>
+                <a href="" class="footer__link"> Lavorare all'estero (IT) </a>
+                <a href="" class="footer__link"> Praca za granicą (PL) </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer__bottom">
+                    <p class="footer__text">
+                        © 2021 Search Jobs Abroad. All Rights Reserved. Powered by Jobboard Niche
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("readmore").addEventListener("click", toggle);
+
+      function toggle() {
+        let el = document.getElementById("content");
+
+        if (el.classList.contains("show")) {
+          el.classList.remove("show");
+        } else {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>
