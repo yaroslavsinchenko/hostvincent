@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("fonts/OpenSans-Regular.eot?") format("eot"), url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url("fonts/OpenSans-SemiBold.eot?") format("eot"), url("fonts/OpenSans-SemiBold.woff") format("woff"), url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: black;
@@ -80,7 +92,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 5px 0px;
+  padding: 5px 0px 0px;
   border: 1px solid transparent;
   position: absolute;
   left: 180px;
@@ -102,7 +114,11 @@ body {
   color: #aaa8a8;
   font-size: 14px;
   display: none;
-  padding: 8px 17px 8px 35px;
+  padding: 8px 20px 8px 35px;
+}
+
+.languages__link:nth-last-child {
+  padding-bottom: 30px;
 }
 
 .languages__link.active {

@@ -48,7 +48,7 @@
 .languages
     display: flex
     align-items: flex-start
-    padding: 5px 0px
+    padding: 5px 0px 0px
     border: 1px solid transparent
     position: absolute
     left: 180px
@@ -66,8 +66,9 @@
         color: #aaa8a8
         font-size: 14px
         display: none
-        padding: 8px 17px 8px 35px
-
+        padding: 8px 20px 8px 35px
+        &:nth-last-child
+            padding-bottom: 30px
         &.active 
             color: #aaa8a8
             display: block
