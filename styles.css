@@ -50,10 +50,6 @@ body {
   text-decoration: underline;
 }
 
-.navbar-light .navbar-nav .nav-link.withborder {
-  border-right: 1px solid #e6e6e6;
-}
-
 .navbar-light .navbar-nav .nav-link.header__button {
   color: #fa7803;
   border: 2px solid #fa7803;
@@ -164,7 +160,7 @@ body {
     padding: 0px 7px;
   }
   .languages {
-    left: 165px;
+    left: 155px;
     top: 12px;
   }
   .header__logo {
@@ -1530,6 +1526,16 @@ body {
   padding-right: 5px;
 }
 
+.section.withnopadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section.withnopadding .section__header {
+  padding-right: 15px;
+  padding-left: 40px;
+}
+
 .section.stats {
   padding-left: 40px;
   padding-right: 40px;
@@ -1626,6 +1632,10 @@ body {
 @media (max-width: 767px) {
   .section.withmorepadding {
     padding: 22px 15px 30px;
+  }
+  .section.withnopadding .section__header {
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .section__interaction {
     padding-top: 35px;
@@ -1739,7 +1749,6 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 10px;
-  border: 1px solid #979797;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,9 +1765,8 @@ body {
 }
 
 .jobs__item {
-  padding-top: 30px;
-  padding-bottom: 40px;
   border-bottom: 1px solid #e8e8e8;
+  padding: 30px 15px 40px 40px;
 }
 
 .jobs__header {
@@ -1834,7 +1842,7 @@ body {
     padding-left: 0px;
   }
   .jobs__item {
-    padding: 16px 0px;
+    padding: 16px 15px;
   }
   .jobs__text {
     display: none;
@@ -2101,3 +2109,4 @@ body {
     margin-top: 17px;
   }
 }
+/*# sourceMappingURL=styles.css.map */

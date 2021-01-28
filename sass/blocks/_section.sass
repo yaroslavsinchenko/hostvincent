@@ -10,6 +10,12 @@
     &.withlesspadding
         padding-left: 5px
         padding-right: 5px
+    &.withnopadding
+        padding-left: 0px
+        padding-right: 0px
+        .section__header
+            padding-right: 15px
+            padding-left: 40px
     &.stats
         padding-left: 40px
         padding-right: 40px
@@ -88,6 +94,10 @@
     .section
         &.withmorepadding
             padding: 22px 15px 30px
+        &.withnopadding
+            .section__header
+                padding-right: 15px
+                padding-left: 15px
         &__interaction
             padding-top: 35px
             flex-direction: column 
