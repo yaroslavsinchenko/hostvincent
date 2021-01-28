@@ -274,8 +274,9 @@ body {
 }
 
 .banner {
-  min-height: 665px;
-  background: black;
+  min-height: 450px;
+  background: white;
+  border-bottom: 1px solid #c9c9c9;
   padding-top: 75px;
 }
 
@@ -290,7 +291,6 @@ body {
   font-size: 37px;
   font-weight: 600;
   letter-spacing: 2.1px;
-  color: #ffffff;
   line-height: normal;
 }
 
@@ -379,9 +379,6 @@ body {
   .banner__header {
     font-size: 34px;
   }
-  .banner__content {
-    max-width: 350px;
-  }
 }
 
 @media (max-width: 359px) {
@@ -389,7 +386,7 @@ body {
     padding-top: 70px;
   }
   .banner__header {
-    font-size: 31px;
+    font-size: 31.5px;
   }
 }
 
