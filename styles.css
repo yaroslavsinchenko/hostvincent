@@ -17,7 +17,7 @@ body {
   width: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .header__icon {
@@ -279,7 +279,7 @@ body {
 .banner {
   min-height: 410px;
   background: #fbf4ed;
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid #e2e2e2;
   padding-top: 75px;
 }
 
@@ -1655,20 +1655,13 @@ body {
 
 .preferences__item {
   line-height: 19px;
-  width: 33.3%;
+  width: 20%;
   margin-bottom: 7px;
   padding-right: 10px;
 }
 
-.preferences__item.region {
-  width: 20%;
-}
-
 @media (max-width: 991px) {
   .preferences__item {
-    width: 33%;
-  }
-  .preferences__item.region {
     width: 33%;
   }
   .preferences__link {
@@ -1681,9 +1674,6 @@ body {
     padding-left: 15px;
   }
   .preferences__item {
-    width: 50%;
-  }
-  .preferences__item.region {
     width: 50%;
   }
 }
