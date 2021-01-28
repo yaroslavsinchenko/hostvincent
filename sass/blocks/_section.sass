@@ -67,13 +67,10 @@
 
 @media (max-width: 767px)
     .section
-        &.withmorepadding
-            padding: 22px 15px 30px
-        &.withonlybottompadding
-            .section__header
-                padding-top: 22px
-                padding-right: 15px
-                padding-left: 15px
+        &__header
+            padding-left: 0px
+            padding-right: 0px
+            text-align: center
         &__interaction
             padding-top: 35px
             flex-direction: column 
@@ -87,7 +84,6 @@
 @media (max-width: 575px)
     .section
         &__header
-            text-align: center
             font-size: 24px
 
 // @media (max-width: 359px)

@@ -1,4 +1,4 @@
-.region
+.preferences
     &__list
         list-style-type: none
         display: flex
@@ -19,24 +19,30 @@
             color: $orange
     &__item
         line-height: 19px
-        width: 20%
+        width: 33.3%
         margin-bottom: 7px
         padding-right: 10px
+        &.region
+            width: 20%
  
 // @media (min-width: 1200px)
 
 // @media (max-width: 1199px)
 
 @media (max-width: 991px)
-    .region
+    .preferences
         &__item
             width: 33%
+            &.region
+                width: 33%
         &__link
             font-size: 14px
 
 @media (max-width: 767px)
-    .region
+    .preferences
         &__list
             padding-left: 15px
         &__item
             width: 50%
+            &.region
+                width: 50%
