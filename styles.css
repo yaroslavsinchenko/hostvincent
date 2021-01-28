@@ -58,8 +58,8 @@ body {
   font-size: 14px;
   margin: 0px 5px;
   border-radius: 4px;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -webkit-transform: translateY(-0.5px);
+          transform: translateY(-0.5px);
 }
 
 .navbar-light .navbar-nav .nav-link.header__button:hover {
