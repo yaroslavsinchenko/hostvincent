@@ -1,5 +1,5 @@
 .banner
-    min-height: 410px
+    height: 350px
     background: #fbf4ed
     border-bottom: 1px solid #e2e2e2
     padding-top: 75px
@@ -9,12 +9,14 @@
         width: 100%
         box-sizing: content-box
     &__header
-        padding-bottom: 25px
-        font-size: 37px
+        padding-bottom: 20px
+        font-size: 34px
         font-weight: 600
         letter-spacing: 2.1px
         line-height: normal
-        min-height: 43px    
+        height: 47px
+        box-sizing: content-box    
+        margin-bottom: 0px
     &__select
         width: 25%
         height: 58px
@@ -64,6 +66,7 @@
 
 @media (max-width: 991px)
     .banner
+        height: 440px
         &__select
             width: 100%
             border: 1px solid $orange
@@ -78,27 +81,23 @@
         &__content
             max-width: 400px
             height: 315px
+            padding-top: 50px
         
 
 // @media (max-width: 767px)
 
 @media (max-width: 575px)
     .banner
+        height: 460px
         &__header
-            font-size: 34px
+            font-size: 31px
             box-sizing: content-box
             height: 47px
 
-@media (max-width: 383px)
+@media (max-width: 349px)
     .banner
+        height: 500px
         &__content
-            height: 350px
+            padding-top: 20px
         &__header
-            height: 93.5px
-
-@media (max-width: 359px)
-    .banner
-        padding-top: 70px
-        &__header
-            height: 85px
-            font-size: 31.5px
+            height: 88px
