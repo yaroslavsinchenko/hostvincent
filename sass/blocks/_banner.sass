@@ -1,5 +1,5 @@
 .banner
-    min-height: 410px
+    height: 410px
     background: #fbf4ed
     border-bottom: 1px solid #e2e2e2
     padding-top: 75px
@@ -61,6 +61,7 @@
 
 @media (max-width: 991px)
     .banner
+        height: 470px
         &__select
             width: 100%
             border: 1px solid $orange
@@ -81,6 +82,10 @@
     .banner
         &__header
             font-size: 34px
+
+@media (max-width: 383px)
+    .banner
+        height: 510px
 
 @media (max-width: 359px)
     .banner
