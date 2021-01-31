@@ -1,0 +1,205 @@
+.sidebar
+    width: 100%
+    border-radius: 6px
+    max-width: 360px
+    padding: 10px 40px 0
+    &__block
+        padding: 15px 0px
+    &__total
+        font-size: 16px 
+        margin-bottom: 20px
+    &__select
+        width: 100%
+        height: 41px
+        display: block
+        outline: none
+        color: #9baebc
+        border-radius: 4px
+        padding-left: 29px
+        padding-right: 10px
+        background-color: #fff
+        border: 1px solid #9baebc
+        background-position: 10px 11.5px
+        background-repeat: no-repeat
+        background-size: 15px
+        margin-bottom: 12px
+        appearance: none
+        font-size: 14px
+        &:nth-child(1)
+            background-image: url('../images/search.png')
+        &:nth-child(2)
+            background-image: url('../images/maps.png')
+    &__button
+        width: 100%
+        height: 41px
+        outline: none
+        border: 1px solid $orange
+        border-radius: 4px
+        margin-top: 8px
+        color: white 
+        background: $orange
+        &:hover 
+            background: #c15c15
+            border-color: #c15c15
+    
+        
+
+
+
+@media (max-width: 1199px)
+    .sidebar
+        padding: 10px 10px 0
+    
+
+// @media (max-width: 991px)
+
+        
+@media (max-width: 767px)
+    .sidebar
+        margin-bottom: 5px
+        padding: 10px 40px 0
+
+@media (max-width: 575px)
+    .sidebar
+        padding: 10px 35px 0
+
+@media (max-width: 349px)
+    .sidebar
+        padding: 10px 10px 0
+        
+
+.filter
+    margin-bottom: 20px
+    &__header
+        font-size: 14.7px
+        line-height: 1.29
+        letter-spacing: .6px
+        color: #353535
+        margin-bottom: 10px
+        font-weight: 600
+        &:hover
+            cursor: pointer
+        &::before
+            content: '—'
+            position: relative
+            padding-right: 2px
+        &.hide
+            &::before
+                content: '+'
+    &__input
+        display: flex
+        align-items: center
+        margin-bottom: 5px
+        position: relative
+        &-label
+            margin: 0
+            font-size: 14.7px   
+            font-weight: 600
+            letter-spacing: 0.7px
+            color: #aaa8a8
+            width: 100%
+            cursor: pointer
+            padding: 5.5px 7px 5px
+            position: relative
+        &-counter 
+            
+            color: #364955
+            background: #e6e6e6
+            
+            padding: 3px 6px 2px
+            text-align: center 
+            letter-spacing: 0.4px
+            font-weight: 600
+            font-size: 10px
+            position: absolute
+            right: 5px
+            top: 6.5px
+        &-field
+            display: none
+    &__form
+        max-height: 370px
+        overflow: auto
+        padding-right: 5px
+        &::-webkit-scrollbar
+            width: 7px
+            background: #f1f2f3
+        &::-webkit-scrollbar-thumb
+            background: $orange
+        &.hide
+            display: none
+                
+            
+input[type="checkbox"]:checked + label
+    background: rgba(155, 174, 188, 0.14)
+    color: #364955
+
+
+input[type="checkbox"]:checked + label > .filter__input-counter
+   color: white
+   background: #9baebc
+
+input[type="checkbox"] + label:before 
+    border: 1px solid  #aaa8a8
+    content: ""
+    display: inline-block
+    height: 11.4px
+    width: 12.4px
+    transform: translateY(0.18px)
+    margin-right: 1px
+
+input[type="checkbox"]:checked + label:before 
+    background: $orange
+    color: white
+    content: ""
+    background-image: url('../images/check-mark.png')
+    background-size: 78%
+    background-position:  center 0.5px
+    background-repeat: no-repeat
+    border-color: $orange
+    text-align: center
+
+
+input[type="radio"]:checked + label
+    background: rgba(155, 174, 188, 0.14)
+    color: #364955
+
+
+input[type="radio"]:checked + label > .filter__input-counter
+   color: white
+   background: #9baebc
+
+input[type="radio"] + label:before 
+    border: 1px solid  #aaa8a8
+    border-radius: 100%
+    background: white
+    content: ""
+    font-size: 17px
+    display: inline-block
+    width: 11px
+    height: 11px
+    transform: translateY(-1px)
+    margin-right: 1px
+
+
+input[type="radio"]:checked + label:before 
+    background: $orange
+    color: white
+    content: ""
+    border-radius: 100%
+    border-color: $orange
+    text-align: center
+        
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+    
+
+@media (max-width: 991px)
+    .filter
+        &__input
+            &-label
+                font-size: 14px
+    input[type="radio"] + label:before 
+        transform: none
+

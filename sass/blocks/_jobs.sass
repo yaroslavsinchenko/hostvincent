@@ -1,55 +1,93 @@
-.jobs
+.jobs 
     &__photo
         &-link
-            width: 80px
-            height: 80px
+            width: 75px
+            height: 75px
             border-radius: 10px
             display: flex
             align-items: center 
             justify-content: center
-        &-image
-            width: 74.4px
-            height: 74.4px
             max-width: 100%
+        &-image
+            max-width: 100%
+        &-col 
+            display: flex 
+            justify-content: center
+        
     &__item
         border-bottom: 1px solid #e8e8e8
         padding: 30px 15px 40px 40px
+        &.samepadding
+            padding: 21px 40px
     &__header
         font-size: 19px
         font-weight: 400
         letter-spacing: 1.1px
         color: $orange
         margin: 0
+        &.small 
+            font-size: 17.5px
+            letter-spacing: 0.43px
+            font-weight: 600
         &:hover 
             color: $orange
             text-decoration: underline
     &__content
-        padding-left: 20px
+        padding-left: 30px
     &__tags
-        // padding: 10px 0px
-        margin-top: 2px
+        margin-top: 7.5px
         display: flex
-        flex-wrap: wrap
+        flex-wrap: wrap 
     &__tag
         padding-right: 44px
+        display: flex
+        align-items: center
         &-image
-            margin-right: 1px
+            margin-right: 3px
             height: 11px
             width: 11px
+            &.maps
+                transform: translateY(-1px)
         &-text 
             display: inline
             margin: 0
             font-size: 13px
             letter-spacing: 0.35px
             color: #364955
+        &.withlowrightpadding
+            padding-right: 12px
     &__text
         font-size: 16px
         color: #353535
         letter-spacing: 0.43px
         line-height: 22px
         margin: 0
-        margin-top: 6px
+        margin-top: 8px
+    &__page
+        background-color: white
+        color: $orange
+        text-decoration: none
+        text-align: center 
+        border: 1px solid $orange
+        padding: 5px 8px
+        margin: 5px 2px
+        font-size: 14px
+        letter-spacing: 0.37px
+        min-width: 33px
+        &:hover
+            color: white 
+            background: $orange
+            text-decoration: none   
+        &.current
+            background: $orange
+            color: white
 
+    &__pagination
+        display: flex 
+        justify-content: center
+        flex-wrap: wrap
+        padding: 0px 40px
+        margin-top: 50px
 
 // @media (min-width: 1200px)
 
@@ -61,7 +99,13 @@
 @media (max-width: 991px)
     .jobs
         &__content
-            padding-left: 5px
+            padding-left: 30px
+        &__item
+            &.samepadding
+                padding-left: 25px
+                padding-right: 25px
+        &__pagination
+            padding: 0px 25px
 
 @media (max-width: 767px)
     .jobs
@@ -75,7 +119,14 @@
             display: none
         &__tags
             flex-direction: column
-
+        &__page
+            font-size: 12px
+            padding: 3px 4px
+            min-width: 25px
+            min-height: 29px
+            display: flex
+            align-items: center 
+            justify-content: center
 // @media (max-width: 575px)
 
 // @media (max-width: 359px)

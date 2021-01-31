@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css  " />
+    <link rel="stylesheet" href="css/styles.css?v=1.1" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="images/main-logo.png" class="header__logo" alt="logo" />
+            </a>
+            <div class="languages">
+              <div class="languages__nav">
+                <a href="" class="languages__link active desc">
+                  <img
+                    src="images/globe.png"
+                    alt="globe"
+                    class="languages__icon"
+                  />
+                  English
+                </a>
+                <a href="" class="languages__link active mobile">
+                  <img
+                    src="images/globe.png"
+                    alt="globe"
+                    class="languages__icon"
+                  />
+                  EN
+                </a>
+                <a href="" class="languages__link"> English </a>
+                <a href="" class="languages__link"> Nederlands </a>
+                <a href="" class="languages__link"> German </a>
+                <a href="" class="languages__link"> Français </a>
+                <a href="" class="languages__link"> Italiano </a>
+                <a href="" class="languages__link"> Polski </a>
+                <a href="" class="languages__link"> Español </a>
+                <a href="" class="languages__link"> Hànyǔ </a>
+                <a href="" class="languages__link"> Russian </a>
+                <a href="" class="languages__link"> Portuguese </a>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Companies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Add your Resume</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/register.png" class="header__icon" />
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/login.png" class="header__icon" />
+                    Login
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header__button" href="#"
+                    >Recruitment for companies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="container content">
+        <div class="row justify-content-center align-items-start">
+          <!-- SIDEBAR -->
+          <div class="col-12 col-sm-9 col-md-5 col-lg-4 d-flex justify-content-center">
+            <div class="sidebar">
+              <div class="sidebar__block">
+                <p class="sidebar__total">
+                  39584 Jobs found
+                </p>
+
+                <form action="">
+                  <select class="sidebar__select">
+                    <option selected>All functions</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+  
+                  <select class="sidebar__select">
+                    <option selected>All languages</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <button class="sidebar__button">Search</button>
+                </form>
+              </div>
+              <div class="sidebar__block">
+                <div class="filter">
+                  <h2 class="filter__header" id="headerlang">
+                    Languages
+                  </h2>
+                  <form action="" class="filter__form" id="languages">
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch1">
+                    <label class="filter__input-label" for="ch1">
+                      English
+                      <span class="filter__input-counter">38411</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch2">
+                    <label class="filter__input-label" for="ch2">
+                      Dutch
+                      <span class="filter__input-counter">47</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch3">
+                    <label class="filter__input-label" for="ch3">
+                      German
+                      <span class="filter__input-counter">171</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch4">
+                    <label class="filter__input-label" for="ch4">
+                      French
+                      <span class="filter__input-counter">243</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch5">
+                    <label class="filter__input-label" for="ch5">
+                      Italian
+                      <span class="filter__input-counter">36</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch6">
+                    <label class="filter__input-label" for="ch6">
+                      Polish
+                      <span class="filter__input-counter">21</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch7">
+                    <label class="filter__input-label" for="ch7">
+                      Spanish
+                      <span class="filter__input-counter">160</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch8">
+                    <label class="filter__input-label" for="ch8">
+                      Portuguese
+                      <span class="filter__input-counter">23</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch9">
+                    <label class="filter__input-label" for="ch9">
+                      Danish
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch10">
+                    <label class="filter__input-label" for="ch10">
+                      Swedish
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch11">
+                    <label class="filter__input-label" for="ch11">
+                      Norwegian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch12">
+                    <label class="filter__input-label" for="ch12">
+                      Czech
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch13">
+                    <label class="filter__input-label" for="ch13">
+                      Finnish
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch14">
+                    <label class="filter__input-label" for="ch14">
+                      Hungarian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch15">
+                    <label class="filter__input-label" for="ch15">
+                      Slovak
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch16">
+                    <label class="filter__input-label" for="ch16">
+                      Bulgarian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch17">
+                    <label class="filter__input-label" for="ch17">
+                      Romanian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch18">
+                    <label class="filter__input-label" for="ch18">
+                      Greek
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch19">
+                    <label class="filter__input-label" for="ch19">
+                      Ukrainian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch20">
+                    <label class="filter__input-label" for="ch20">
+                      Slovenian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch21">
+                    <label class="filter__input-label" for="ch21">
+                      Estonian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch22">
+                    <label class="filter__input-label" for="ch22">
+                      Latvian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch23">
+                    <label class="filter__input-label" for="ch23">
+                      Lithuanian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch24">
+                    <label class="filter__input-label" for="ch24">
+                      Cantonese
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch25">
+                    <label class="filter__input-label" for="ch25">
+                      Arabic
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch26">
+                    <label class="filter__input-label" for="ch26">
+                      Flemish
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch27">
+                    <label class="filter__input-label" for="ch27">
+                      Croatian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch28">
+                    <label class="filter__input-label" for="ch28">
+                      Turkish
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch29">
+                    <label class="filter__input-label" for="ch29">
+                      Russian
+                      <span class="filter__input-counter">11</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch30">
+                    <label class="filter__input-label" for="ch30">
+                      Japanese
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch31">
+                    <label class="filter__input-label" for="ch31">
+                      Malay
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch32">
+                    <label class="filter__input-label" for="ch32">
+                      Bengali
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch33">
+                    <label class="filter__input-label" for="ch33">
+                      Hebrew
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch34">
+                    <label class="filter__input-label" for="ch34">
+                      Chinese
+                      <span class="filter__input-counter">14</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch35">
+                    <label class="filter__input-label" for="ch35">
+                      Korean
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch36">
+                    <label class="filter__input-label" for="ch36">
+                      Serbian
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch37">
+                    <label class="filter__input-label" for="ch37">
+                      Hindi
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" type="checkbox" value="" id="ch38">
+                    <label class="filter__input-label" for="ch38">
+                      American English
+                      <span class="filter__input-counter">0</span>
+                    </label>
+                   </div>
+                  </form>
+                </div>
+                <div class="filter">
+                  <h2 class="filter__header" id="headerdate">
+                    Posting date
+                  </h2>
+                  <form action="" class="filter__form" id="dates">
+                    <div class="filter__input">
+                      <input class="filter__input-field" name="date" type="radio" value="1" id="date1">
+                      <label class="filter__input-label" for="date1">
+                        All posting dates
+                        <span class="filter__input-counter">38455</span>
+                      </label>
+                     </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="2" id="date2">
+                    <label class="filter__input-label" for="date2">
+                      Today posted
+                      <span class="filter__input-counter">38455</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="3" id="date3">
+                    <label class="filter__input-label" for="date3">
+                      Yesterday posted
+                      <span class="filter__input-counter">38455</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="4" id="date4">
+                    <label class="filter__input-label" for="date4">
+                      Last 7 days posted
+                      <span class="filter__input-counter">2879</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="5" id="date5">
+                    <label class="filter__input-label" for="date3">
+                      Last 14 days posted
+                      <span class="filter__input-counter">4586</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="6" id="date6">
+                    <label class="filter__input-label" for="date6">
+                      Last 30 days posted
+                      <span class="filter__input-counter">8183</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="date" type="radio" value="7" id="date7">
+                    <label class="filter__input-label" for="date3">
+                      Last 60 days posted
+                      <span class="filter__input-counter">11532</span>
+                    </label>
+                   </div>
+                   
+                   
+                  </form>
+                </div>
+                <div class="filter">
+                  <h2 class="filter__header" id="headercompany">
+                    Company type
+                  </h2>
+                  <form action="" class="filter__form" id="companies">
+                    <div class="filter__input">
+                      <input class="filter__input-field" name="company" type="radio" value="1" id="company1">
+                      <label class="filter__input-label" for="company1">
+                        All posting dates
+                        <span class="filter__input-counter">38455</span>
+                      </label>
+                     </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="company" type="radio" value="2" id="company2">
+                    <label class="filter__input-label" for="company2">
+                      Today posted
+                      <span class="filter__input-counter">38455</span>
+                    </label>
+                   </div>
+                   <div class="filter__input">
+                    <input class="filter__input-field" name="company" type="radio" value="3" id="company3">
+                    <label class="filter__input-label" for="company3">
+                      Yesterday posted
+                      <span class="filter__input-counter">38455</span>
+                    </label>
+                   </div>        
+                   
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JOBS -->
+          <div class="col-12 col-sm-10 col-md-7 col-lg-8 d-flex justify-content-center">
+            <div class="section latestjobs">
+              <div class="jobs__item samepadding">
+                <div class="jobs__row d-flex">
+                  <div class="jobs__photo-col">
+                    <a href="" class="jobs__photo-link">
+                      <img
+                        src="images/companies/atlassian.png"
+                        alt="verizon"
+                        class="jobs__photo-image"
+                      />
+                    </a>
+                  </div>
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header small">
+                        Channel Partner Business Manager
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image maps"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text withbiggertopmargin">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="jobs__item samepadding">
+                <div class="jobs__row d-flex">
+                  <div class="jobs__photo-col">
+                    <a href="" class="jobs__photo-link">
+                      <img
+                        src="images/companies/verizon.jpeg"
+                        alt="verizon"
+                        class="jobs__photo-image"
+                      />
+                    </a>
+                  </div>
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header small">
+                        Channel Partner Business Manager
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image maps"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text withbiggertopmargin">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="jobs__item samepadding">
+                <div class="jobs__row d-flex">
+                  <div class="jobs__photo-col">
+                    <a href="" class="jobs__photo-link">
+                      <img
+                        src="images/companies/verizon.jpeg"
+                        alt="verizon"
+                        class="jobs__photo-image"
+                      />
+                    </a>
+                  </div>
+                  <div class="jobs__content">
+                    <a href="">
+                      <h3 class="jobs__header small">
+                        Product Designer - DevOps (Remote)
+                      </h3>
+                    </a>
+                    <div class="jobs__tags">
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/mapsblack.png"
+                          alt=""
+                          class="jobs__tag-image maps"
+                        />
+                        <p class="jobs__tag-text">Unites States, San Diego</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/time.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">2 hours ago</p>
+                      </div>
+
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/check.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">Verizon</p>
+                      </div>
+                      <div class="jobs__tag withlowrightpadding">
+                        <img
+                          src="images/languageblack.png"
+                          alt=""
+                          class="jobs__tag-image"
+                        />
+                        <p class="jobs__tag-text">English</p>
+                      </div>
+                    </div>
+                    <p class="jobs__text withbiggertopmargin">
+                      At HP Inc., we exist to amaze. Through the people we hire,
+                      the experiences we enable, the way we treat our customers
+                      and each other, and ultimately through the technology we
+                      create...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="jobs__pagination">
+                  <a href="" class="jobs__page current">1</a>
+                  <a href="" class="jobs__page">2</a>
+                  <a href="" class="jobs__page">3</a>
+                  <a href="" class="jobs__page">4</a>
+                  <a href="" class="jobs__page">5</a>
+                  <a href="" class="jobs__page">6</a>
+                  <a href="" class="jobs__page">7</a>
+                  <a href="" class="jobs__page">8</a>
+                  <a href="" class="jobs__page">...</a>
+                  <a href="" class="jobs__page">1573</a>
+                  <a href="" class="jobs__page">1574</a>
+                  <a href="" class="jobs__page">Next</a>
+                  
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer__section">
+                <div class="footer__item">
+                  <h2 class="footer__header">About us</h2>
+                  <a href="" class="footer__link">About Search Jobs Abroad</a>
+                  <a href="" class="footer__link">Blog</a>
+                  <a href="" class="footer__link">Contact</a>
+                  <a href="" class="footer__link">Terms</a>
+                  <a href="" class="footer__link">Privacy</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">Candidate</h2>
+                  <a href="" class="footer__link">Search Jobs</a>
+                  <a href="" class="footer__link">Upload Resume</a>
+                  <a href="" class="footer__link">Countries</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">Employer</h2>
+                  <a href="" class="footer__link">International Recruitment</a>
+                  <a href="" class="footer__link">Search resumes</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">International career?</h2>
+                  <a href="" class="footer__link">
+                    Werken in het buitenland (NL)
+                  </a>
+                  <a href="" class="footer__link"> Jobs Abroad (EN) </a>
+                  <a href="" class="footer__link"> Arbeiten im ausland (DE) </a>
+                  <a href="" class="footer__link">
+                    Travailler à l'étranger(FR)
+                  </a>
+                  <a href="" class="footer__link">
+                    Trabajos en Extranjero (ES)
+                  </a>
+                  <a href="" class="footer__link"> Lavorare all'estero (IT) </a>
+                  <a href="" class="footer__link"> Praca za granicą (PL) </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text">
+            © 2021 Search Jobs Abroad. All Rights Reserved. Powered by Jobboard
+            Niche
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.getElementById("headerlang").addEventListener("click", toggleLangForm);
+
+      function toggleLangForm() {
+        let form = document.getElementById("languages");
+        let header = document.getElementById("headerlang")
+
+        if (form.classList.contains("hide")) {
+          form.classList.remove("hide");
+          header.classList.remove("hide");
+        } else {
+          form.classList.add("hide");
+          header.classList.add("hide");
+        }
+      }
+
+      document.getElementById("headerdate").addEventListener("click", toggleDateForm);
+
+      function toggleDateForm() {
+        let form = document.getElementById("dates");
+        let header = document.getElementById("headerdate")
+
+        if (form.classList.contains("hide")) {
+          form.classList.remove("hide");
+          header.classList.remove("hide");
+        } else {
+          form.classList.add("hide");
+          header.classList.add("hide");
+        }
+      }
+
+      
+      document.getElementById("headercompany").addEventListener("click", toggleCompanyForm);
+
+      function toggleCompanyForm() {
+        let form = document.getElementById("companies");
+        let header = document.getElementById("headercompany")
+
+        if (form.classList.contains("hide")) {
+          form.classList.remove("hide");
+          header.classList.remove("hide");
+        } else {
+          form.classList.add("hide");
+          header.classList.add("hide");
+        }
+      }
+
+    </script>
+  </body>
+</html>
