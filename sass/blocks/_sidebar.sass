@@ -91,10 +91,6 @@
                 display: none
                 &.show
                     display: block
-        &__total
-            display: none 
-            &.show
-                display: block
         &__filtersbutton
             display: block
 
@@ -135,7 +131,7 @@
             font-size: 14.7px   
             font-weight: 600
             letter-spacing: 0.7px
-            color: #aaa8a8
+            color: #373737
             width: 100%
             cursor: pointer
             padding: 5.5px 7px 5px
@@ -217,12 +213,12 @@ input[type="checkbox"]:checked + label > .filter__input-counter
    background: #9baebc
 
 input[type="checkbox"] + label:before 
-    border: 1px solid  #aaa8a8
+    border: 1px solid #373737
     content: ""
     display: inline-block
-    height: 11.4px
-    width: 12.4px
-    transform: translateY(0.18px)
+    height: 12px
+    width: 12px
+    transform: translateY(0.4px)
     margin-right: 1px
 
 input[type="checkbox"]:checked + label:before 
@@ -230,8 +226,8 @@ input[type="checkbox"]:checked + label:before
     color: white
     content: ""
     background-image: url('../images/check-mark.png')
-    background-size: 78%
-    background-position:  center 0.5px
+    background-size: 80%
+    background-position:  center
     background-repeat: no-repeat
     border-color: $orange
     text-align: center
@@ -247,7 +243,7 @@ input[type="radio"]:checked + label > .filter__input-counter
    background: #9baebc
 
 input[type="radio"] + label:before 
-    border: 1px solid  #aaa8a8
+    border: 1px solid #373737
     border-radius: 100%
     background: white
     content: ""

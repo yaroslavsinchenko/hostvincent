@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css  " />
-    <link rel="stylesheet" href="css/styles.css?v=1.1" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="app">
@@ -108,7 +108,7 @@
           <div class="col-12 col-sm-9 col-md-5 col-lg-4 d-flex justify-content-center">
             <div class="sidebar">
               <div class="sidebar__block">
-                <p class="sidebar__total" id="total">
+                <p class="sidebar__total">
                   39584 Jobs found
                 </p>
 
@@ -864,16 +864,13 @@
       function toggleFilters(e){
         e.preventDefault()
         let filters = document.getElementById("filters");
-        let total = document.getElementById("total")
         let filtertext = document.getElementById("showfilterstext")
 
         if (filters.classList.contains("show")) {
           filters.classList.remove("show");
-          total.classList.remove("show");
           filtertext.innerHTML = "Show advanced filters"
         } else {
           filters.classList.add("show");
-          total.classList.add("show");
           filtertext.innerHTML = "Hide advanced filters"
         }
       }
