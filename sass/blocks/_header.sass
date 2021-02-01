@@ -68,7 +68,7 @@
         text-decoration: none 
         color: #aaa8a8
         font-size: 14px
-        display: none
+        display: none 
         padding: 8px 20px 8px 35px
         &:nth-last-child
             padding-bottom: 30px
@@ -86,10 +86,11 @@
             text-decoration: none 
             background: #fa7803
             color: white
+            cursor: pointer
     &__nav
         display: flex
         flex-direction: column
-    &:active 
+    &:hover 
         border: 1px solid #e6e6e6
         border-radius: 5px
         .languages__link
@@ -98,7 +99,16 @@
                 display: block 
             &.mobile
                 display: none
-
+    // &:active 
+    //     border: 1px solid #e6e6e6
+    //     border-radius: 5px
+    //     .languages__link
+    //         display: block
+    //         &.desc
+    //             display: block 
+    //         &.mobile
+    //             display: none
+    
 .navbar-nav
     width: 779px
     height: 24.6px
@@ -171,7 +181,14 @@
     .navbar-nav
         width: auto 
         height: auto
-// @media (max-width: 767px)
+@media (max-width: 767px)
+    .languages
+        &:hover 
+            .languages__link
+                &.desc
+                    display: none 
+                &.mobile
+                    display: block
 
 @media (max-width: 575px)
     .navbar
@@ -182,12 +199,6 @@
             padding: 8px 17px 8px 30px
             &.active 
                 padding: 3px 17px 5px 30px
-        &:hover 
-            .languages__link
-                &.desc
-                    display: none 
-                &.mobile
-                    display: block
         &__icon
             left: 8px
     .navbar-toggler
