@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="app">
+
       <!-- HEADER -->
       <div class="header">
         <div class="container">
@@ -54,6 +55,7 @@
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              id="navbar-toggler"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -106,7 +108,7 @@
           <div class="col-12 col-sm-9 col-md-5 col-lg-4 d-flex justify-content-center">
             <div class="sidebar">
               <div class="sidebar__block">
-                <p class="sidebar__total">
+                <p class="sidebar__total" id="total">
                   39584 Jobs found
                 </p>
 
@@ -126,9 +128,14 @@
                   </select>
 
                   <button class="sidebar__button">Search</button>
+
+                  <p class="sidebar__filtersbutton" id="showfilters">
+                    <img class="sidebar__filtersbutton-icon" src="images/sliders.png" alt="icon">
+                    <span id="showfiltertext">Show advanced filter</span>
+                  </p>
                 </form>
               </div>
-              <div class="sidebar__block">
+              <div class="sidebar__block" id="filters">
                 <div class="filter">
                   <h2 class="filter__header" id="headerlang">
                     Languages
@@ -496,6 +503,43 @@
           <!-- JOBS -->
           <div class="col-12 col-sm-10 col-md-7 col-lg-8 d-flex justify-content-center">
             <div class="section latestjobs">
+
+              <div class="filter__row">
+                <div class="filter__column">
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+              
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__selected">
+                    German
+                    <span>×</span>
+                  </a>
+                  <a href="" class="filter__clear">Clear all</a>
+                </div>
+              
+              </div>
+
               <div class="jobs__item samepadding">
                 <div class="jobs__row d-flex">
                   <div class="jobs__photo-col">
@@ -755,18 +799,19 @@
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-
     <script>
+      document.getElementById("navbar-toggler").addEventListener("click", toggleNavBar);
+
+      function toggleNavBar() {
+        let nav = document.getElementById("navbarNav");
+
+        if (nav.classList.contains("show")) {
+          nav.classList.remove("show");
+        } else {
+          nav.classList.add("show");
+        }
+      }
+
       document.getElementById("headerlang").addEventListener("click", toggleLangForm);
 
       function toggleLangForm() {
@@ -802,7 +847,8 @@
 
       function toggleCompanyForm() {
         let form = document.getElementById("companies");
-        let header = document.getElementById("headercompany")
+        let header = document.getElementById("headercompany");
+        
 
         if (form.classList.contains("hide")) {
           form.classList.remove("hide");
@@ -810,6 +856,24 @@
         } else {
           form.classList.add("hide");
           header.classList.add("hide");
+        }
+      }
+
+      document.getElementById("showfilters").addEventListener("click", toggleFilters);
+
+      function toggleFilters(){
+        let filters = document.getElementById("filters");
+        let total = document.getElementById("total")
+        let filtertext = document.getElementById("showfiltertext")
+
+        if (filters.classList.contains("show")) {
+          filters.classList.remove("show");
+          total.classList.remove("show");
+          filtertext.innerHTML = "Show advanced filters"
+        } else {
+          filters.classList.add("show");
+          total.classList.add("show");
+          filtertext.innerHTML = "Hide advanced filters"
         }
       }
 
