@@ -122,8 +122,7 @@
             &::before
                 content: '+'
     &__input
-        display: flex
-        align-items: center
+
         margin-bottom: 5px
         position: relative
         &-label
@@ -233,34 +232,38 @@ input[type="checkbox"]:checked + label:before
     text-align: center
 
 
-input[type="radio"]:checked + label
-    background: rgba(155, 174, 188, 0.14)
-    color: #364955
+.filter
+    input[type="radio"]:checked + label
+        background: rgba(155, 174, 188, 0.14)
+        color: #364955
 
 
-input[type="radio"]:checked + label > .filter__input-counter
-   color: white
-   background: #9baebc
+.filter 
+    input[type="radio"]:checked + label > .filter__input-counter
+        color: white
+        background: #9baebc
 
-input[type="radio"] + label:before 
-    border: 1px solid #373737
-    border-radius: 100%
-    background: white
-    content: ""
-    font-size: 17px
-    display: inline-block
-    width: 11px
-    height: 11px
-    margin-right: 1.5px
+.filter 
+    input[type="radio"] + label:before 
+        border: 1px solid #373737
+        border-radius: 100%
+        background: white
+        content: ""
+        font-size: 17px
+        display: inline-block
+        width: 11px
+        height: 11px
+        margin-right: 1.5px
 
 
-input[type="radio"]:checked + label:before 
-    background: $orange
-    color: white
-    content: ""
-    border-radius: 100%
-    border-color: $orange
-    text-align: center
+.filter
+    input[type="radio"]:checked + label:before 
+        background: $orange
+        color: white
+        content: ""
+        border-radius: 100%
+        border-color: $orange
+        text-align: center
         
 // @media (min-width: 1200px)
 
@@ -275,6 +278,7 @@ input[type="radio"]:checked + label:before
                 font-size: 14px
         &__row
             padding: 7px 25px 0px
-    input[type="radio"] + label:before 
-        transform: none
+    .filter
+        input[type="radio"] + label:before 
+            transform: none
 

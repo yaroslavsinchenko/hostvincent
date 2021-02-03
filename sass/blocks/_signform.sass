@@ -1,0 +1,147 @@
+.signform
+    padding: 120px 15px 50px
+    &__wrapper
+        border: 1px solid #e2e2e2
+        border-radius: 4px
+        max-width: 560px
+        width: 100%
+        background: white 
+        padding: 30px
+    &__header
+        font-size: 26px
+        letter-spacing: 0.69px
+        font-weight: 400
+        margin-bottom: 23px
+    &__form
+        position: relative
+    &__input
+        width: 100%
+        margin-top: 20px
+        font-size: 14px
+        letter-spacing: 0.37px
+        height: 39px
+        border-radius: 4px
+        border: solid 1px #acacac
+        background-color: #ffffff
+        padding: 0 16px
+        color: black
+        &-wrapper
+            display: flex
+            padding-left: 16px
+        &:focus
+            border-color: $orange
+            outline: none
+        &-label
+            margin: 0
+            font-size: 14.7px   
+            font-weight: 400
+            letter-spacing: 0.7px
+            color: #373737
+            margin-bottom: 3px
+            cursor: pointer
+            position: relative
+            &.withmargin
+                margin-right: 25px
+            &.checkbox
+                font-size: 14px
+                padding-left: 3px
+        &-field
+            display: none
+        &-link 
+            color: $orange
+            // font-size: 15.5px
+            &:hover 
+                color: $orange
+            
+    &__explanation
+        display: block
+        font-size: 12px
+        letter-spacing: 0.37px
+        color: #696969
+        margin-top: 5px
+        padding-left: 17px
+        margin-bottom: 19px
+    &__button
+        margin-top: 48px
+        padding: 17px 72px
+        font-size: 18px
+        font-weight: 400
+        background: $orange
+        color: white 
+        border-radius: 4px
+        border: 1px solid $orange
+        &:hover, &:focus 
+            outline: none
+            box-shadow: none
+            background: $hoverorange
+            border-color: $hoverorange
+
+
+.signform input[type="radio"] + label::before 
+    border: 1px solid #373737
+    border-radius: 100%
+    background: white
+    content: ""
+    font-size: 17px
+    display: inline-block
+    width: 12px
+    height: 12px
+    transform: translateY(0.5px)
+    margin-right: 1.5px
+
+.signform input[type="radio"]:checked + label::before 
+    color: white
+    content: ""
+    border-radius: 100%
+    border-color: $orange
+    text-align: center
+
+.signform input[type="radio"]:checked + label::after 
+    content: ''
+    position: absolute
+    width: 8px
+    height: 8px
+    border-radius: 100%
+    background-color: $orange
+    margin-top: 7px
+    transform: translateY(0.5px)
+    left: 2px
+
+.signform
+    input[type="checkbox"]:checked + label
+        background: none
+        color: black
+
+.signform
+    input[type="checkbox"] + label:before
+        transform: translate(-3px, 0.4px)
+
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+// @media (max-width: 991px)
+
+// @media (max-width: 767px)
+
+@media (max-width: 575px)
+    .signform
+        padding: 105px 15px 50px
+        &__wrapper
+            padding: 25px
+        &__header
+            font-size: 23px
+        &__button
+            margin-top: 30px
+            font-size: 16px
+            padding: 14px 72px
+
+@media (max-width: 359px)
+    .signform
+        &__header
+            font-size: 22px
+        &__button
+            margin-top: 25px
+
+            padding: 12px 65px
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css  " />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+
+      <!-- HEADER -->
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="images/main-logo.png" class="header__logo" alt="logo" />
+            </a>
+            <div class="languages">
+              <div class="languages__nav">
+                <a class="languages__link active desc">
+                  <img
+                    src="images/globe.png"
+                    alt="globe"
+                    class="languages__icon"
+                  />
+                  English
+                </a>
+                <a class="languages__link active mobile">
+                  <img
+                    src="images/globe.png"
+                    alt="globe"
+                    class="languages__icon"
+                  />
+                  EN
+                </a>
+                <a href="" class="languages__link"> English </a>
+                <a href="" class="languages__link"> Nederlands </a>
+                <a href="" class="languages__link"> German </a>
+                <a href="" class="languages__link"> Français </a>
+                <a href="" class="languages__link"> Italiano </a>
+                <a href="" class="languages__link"> Polski </a>
+                <a href="" class="languages__link"> Español </a>
+                <a href="" class="languages__link"> Hànyǔ </a>
+                <a href="" class="languages__link"> Russian </a>
+                <a href="" class="languages__link"> Portuguese </a>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="navbar-toggler"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Companies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link withunderline" href="#">Add your Resume</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/register.png" class="header__icon" />
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/login.png" class="header__icon" />
+                    Login
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header__button" href="#"
+                    >Recruitment for companies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- REGISTER FORM -->
+      <div class="container-fluid signform">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="signform__wrapper">
+                    <h1 class="signform__header">Create your account, It's 100% free
+                    </h1>
+                    <form action="" class="signup__form">
+                        <div class="signform__input-wrapper">
+                            <div>
+                                <input class="signform__input-field" name="usertype" type="radio" value="employer" id="employer">
+                                <label class="signform__input-label withmargin" for="employer">
+                                  Employer
+                                </label>
+                               </div>
+                             <div>
+                              <input class="signform__input-field" name="usertype" type="radio" value="jobseeker" id="jobseeker">
+                              <label class="signform__input-label" for="jobseeker">
+                                Job seeker
+                              </label>
+                             </div>
+                        </div>
+                        <div>
+                
+                            <input type="text" class="signform__input" placeholder="Name">
+                            <input type="email" class="signform__input" placeholder="Email">
+                            <input type="password" class="signform__input" placeholder="Password">
+                            <input type="password" class="signform__input" placeholder="Password confirmation">
+                            <p class="signform__explanation">* At least 5 characters</p>
+
+                            <div class="signform__input-wrapper">
+                                <input class="signform__input-field" type="checkbox" value="term" id="term">
+                                <label class="signform__input-label checkbox" for="term">
+                                    I have read and agree to the <a href="" class="signform__input-link">Terms & Conditions</a>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button class="signform__button">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer__section">
+                <div class="footer__item">
+                  <h2 class="footer__header">About us</h2>
+                  <a href="" class="footer__link">About Search Jobs Abroad</a>
+                  <a href="" class="footer__link">Blog</a>
+                  <a href="" class="footer__link">Contact</a>
+                  <a href="" class="footer__link">Terms</a>
+                  <a href="" class="footer__link">Privacy</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">Candidate</h2>
+                  <a href="" class="footer__link">Search Jobs</a>
+                  <a href="" class="footer__link">Upload Resume</a>
+                  <a href="" class="footer__link">Countries</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">Employer</h2>
+                  <a href="" class="footer__link">International Recruitment</a>
+                  <a href="" class="footer__link">Search resumes</a>
+                </div>
+                <div class="footer__item">
+                  <h2 class="footer__header">International career?</h2>
+                  <a href="" class="footer__link">
+                    Werken in het buitenland (NL)
+                  </a>
+                  <a href="" class="footer__link"> Jobs Abroad (EN) </a>
+                  <a href="" class="footer__link"> Arbeiten im ausland (DE) </a>
+                  <a href="" class="footer__link">
+                    Travailler à l'étranger(FR)
+                  </a>
+                  <a href="" class="footer__link">
+                    Trabajos en Extranjero (ES)
+                  </a>
+                  <a href="" class="footer__link"> Lavorare all'estero (IT) </a>
+                  <a href="" class="footer__link"> Praca za granicą (PL) </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text">
+            © 2021 Search Jobs Abroad. All Rights Reserved. Powered by Jobboard
+            Niche
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("navbar-toggler").addEventListener("click", toggleNavBar);
+
+      function toggleNavBar() {
+        let nav = document.getElementById("navbarNav");
+
+        if (nav.classList.contains("show")) {
+          nav.classList.remove("show");
+        } else {
+          nav.classList.add("show");
+        }
+      }
+    </script>
+
+  </body>
+</html>
