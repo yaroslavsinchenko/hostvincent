@@ -79,13 +79,13 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link register" href="#">
                     <img src="images/register.png" class="header__icon" />
                     Register
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link login" href="#">
                     <img src="images/login.png" class="header__icon" />
                     Login
                   </a>
@@ -101,44 +101,36 @@
         </div>
       </div>
 
-      <!-- REGISTER FORM -->
+      <!-- LOGIN FORM -->
       <div class="container-fluid signform">
           <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <div class="signform__wrapper">
-                    <h1 class="signform__header">Create your account, It's 100% free
+                    <h1 class="signform__header login">Login
                     </h1>
                     <form action="" class="signup__form">
-                        <div class="signform__input-wrapper">
-                            <div>
-                                <input class="signform__input-field" name="usertype" type="radio" value="employer" id="employer">
-                                <label class="signform__input-label withmargin" for="employer">
-                                  Employer
-                                </label>
-                               </div>
-                             <div>
-                              <input class="signform__input-field" name="usertype" type="radio" value="jobseeker" id="jobseeker">
-                              <label class="signform__input-label" for="jobseeker">
-                                Job seeker
-                              </label>
-                             </div>
-                        </div>
                         <div>
-                
-                            <input type="text" class="signform__input" placeholder="Name">
                             <input type="email" class="signform__input" placeholder="Email">
                             <input type="password" class="signform__input" placeholder="Password">
-                            <input type="password" class="signform__input" placeholder="Password confirmation">
-                            <p class="signform__explanation">* At least 5 characters</p>
 
-                            <div class="signform__input-wrapper">
-                                <input class="signform__input-field" type="checkbox" value="term" id="term">
-                                <label class="signform__input-label checkbox" for="term">
-                                    I have read and agree to the <a href="" class="signform__input-link">Terms & Conditions</a>
-                                </label>
+                            
+                            <div class="signform__bottomlinks">
+                                <div class="signform__input-wrapper">
+                                    <input class="signform__input-field" type="checkbox" value="term" id="term">
+                                    <label class="signform__input-label checkbox" for="term">
+                                        Keep me logged in
+                                    </label>
+                                </div>
+                                <div class="signform__controls">
+                                    <a href="" class="signform__input-link">Lost your password?</a>
+                                    \
+                                    <a href="" class="signform__input-link">Sign Up</a>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <button class="signform__button">Register</button>
+
+                            <div class="signform__buttons">
+                                <button class="signform__button">Login</button>
+                                <a class="signform__button gray">Cancel</a>
                             </div>
                         </div>
                     </form>
