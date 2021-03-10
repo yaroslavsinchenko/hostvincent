@@ -1,0 +1,90 @@
+.blog
+    padding-top: 5px
+    padding-bottom: 50px
+    .section
+        padding: 25px 40px 30px
+    .section__header
+        border-bottom: 0
+        padding: 0
+        margin-bottom: 20px
+        height: 28px
+    .section__pagination
+        margin-top: 40px
+    &__item
+        padding: 25px 0
+        display: flex
+        align-items: flex-start
+        border-bottom: 1px solid #e8e8e8
+    &__preview
+        width: 100%
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        &-link
+            min-width: 193px
+            height: 120px
+            position: relative
+            overflow: hidden
+            display: block
+    &__info
+        padding-left: 30px
+        transform: translateY(-3px)
+        height: auto
+    &__header
+        font-size: 26px
+        font-weight: 500
+        letter-spacing: 0.2px
+        margin-bottom: 8px
+        line-height: 30px
+        &-link 
+            color: $orange
+            &:hover 
+                color: $orange
+    &__text
+        margin-bottom: 0px
+        letter-spacing: 0.3px
+        line-height: 22px
+        height: auto
+
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .blog
+        .section
+            padding: 25px 15px 30px
+        .section__header
+            margin-bottom: 20px
+        &__header
+            font-size: 21px
+            line-height: 24px
+        &__text
+            font-size: 15px
+            line-height: 20px
+@media (max-width: 767px)
+    .blog
+        .section__header
+            text-align: left
+        &__header
+            text-align: center
+            margin-top: 18px
+
+        &__item
+            padding: 16px 0px
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 100%
+        .section__pagination
+            margin-top: 20px
+        &__info
+            padding: 0
+            transform: translateY(0px)
+        &__text
+            letter-spacing: 0.2px
+
+
+// @media (max-width: 575px)
+
+// @media (max-width: 359px)  

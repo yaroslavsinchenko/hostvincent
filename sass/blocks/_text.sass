@@ -1,6 +1,5 @@
 .text 
     padding-top: 15px
-    
     &__header
         font-size: 32px
         font-weight: 600
@@ -10,7 +9,8 @@
         color: #111111
         margin-top: 25px
         height: 43.5px
-
+        &.notopmargin
+            margin-top: 0
     &__subheader
         font-size: 24px
         font-weight: 600 
@@ -36,6 +36,18 @@
         &:hover
             text-decoration: underline
             color: $orange
+    &__readmore
+        display: none
+        &.show 
+            display: block
+        &-button
+            font-size: 16px
+            color: $orange
+            margin-top: 16px
+            margin-bottom: 10px
+            &:hover 
+                cursor: pointer
+                text-decoration: underline
    
 // @media (min-width: 1200px)
 

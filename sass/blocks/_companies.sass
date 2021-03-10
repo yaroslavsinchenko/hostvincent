@@ -40,3 +40,40 @@
         &:hover 
             color: #353535
             text-decoration: none
+    &.all-companies
+        margin-bottom: 40px
+        .section__header
+            border-bottom: 0
+        .companies__item
+            &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4), &:nth-last-child(5), &:nth-last-child(6)
+                border-bottom: 0
+        .section__pagination
+            margin-top: 45px
+            padding-bottom: 10px
+
+
+// @media (min-width: 1200px)
+
+@media (max-width: 1199px)
+    .companies
+        &.all-companies
+            .companies__item
+                &:nth-last-child(4), &:nth-last-child(5), &:nth-last-child(6)
+                    border-bottom: 1px solid #e6e6e6
+
+@media (max-width: 991px)
+    .companies
+        &.all-companies
+            .companies__item
+                &:nth-last-child(3)
+                    border-bottom: 1px solid #e6e6e6
+
+@media (max-width: 767px)
+    .companies
+        &.all-companies
+            .section__pagination
+                margin-top: 30px
+
+// @media (max-width: 575px)
+
+// @media (max-width: 359px)  

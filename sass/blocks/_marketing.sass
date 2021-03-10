@@ -1,0 +1,127 @@
+.marketing
+    &__box
+        margin-top: 45px
+        padding-top: 70px
+        min-height: 550px
+        background: url("../images/marketing_background.jpg") no-repeat center center
+        background-size: cover
+        position: relative
+        border-radius: 6px
+        &::before
+            border-radius: 6px
+            position: absolute
+            content: ''
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.3)
+    &__row
+        flex-direction: row-reverse
+    &__header
+        font-size: 26px
+        color: white
+        letter-spacing: 0.69px
+        text-align: center
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 40px 60px 70px
+    &__input
+        margin-bottom: 20px
+        font-size: 14px
+        height: 44px
+        border-radius: 4px
+        padding: 0px 16px
+        border: 1px solid #9baebc
+        width: 100%
+        &::placeholder
+            color: #9baebc
+        &:focus
+            border-color: $orange
+            outline: none
+    &__button
+        background: $orange
+        border-radius: 4px
+        font-size: 16px
+        cursor: pointer
+        padding: 17px
+        color: white
+        border: 2px solid $orange
+        margin-top: 5px
+    &__list
+        height: 100%
+        padding: 0px 80px 130px
+        min-height: 450px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &::before
+            position: absolute
+            content: ''
+            border: 1px solid #A5A5A4
+            height: 50%
+            right: 0
+    &__check
+        height: 14px
+        margin-right: 10px
+    &__text
+        font-size: 16px
+        font-weight: 500
+        display: flex
+        align-items: center
+        line-height: 1.88
+        letter-spacing: 0.2px
+        color: #ffffff
+        margin-bottom: 0px
+    &__textbox
+        margin-top: 30px
+        margin-bottom: 60px
+        padding: 35px 30px 40px
+        &-header
+            text-align: center
+            margin-bottom: 9px
+            font-size: 27px
+            font-weight: 500
+            letter-spacing: 0.69px
+            line-height: 26px
+        &-text
+            font-size: 18px
+            line-height: normal
+            letter-spacing: 0.4px
+            margin-bottom: 0px
+
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .marketing
+        &__box
+            max-width: 500px
+            min-height: 0
+            margin-right: auto
+            margin-left: auto
+            padding-top: 40px
+        &__form
+            padding: 40px 15px 0px
+        &__header
+            margin-bottom: 0
+            padding: 0 15px
+        &__list
+            min-height: 0
+            padding: 40px 15px 60px 30px
+            &::before
+                content: none
+        &__textbox
+            &-header 
+                font-size: 22px
+
+@media (max-width: 767px)
+    .marketing
+        &__box
+            max-width: none
+            margin-right: 0
+            margin-left: 0
+
+// @media (max-width: 359px)  

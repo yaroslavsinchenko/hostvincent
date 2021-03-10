@@ -19,17 +19,25 @@ body
     color: black
     margin: 0
     padding: 0
-    min-height: 100vh
     background: #f7f8fa
+    
 .app
     display: flex
     flex-direction: column
     min-height: 100vh
+    padding-top: 75px
+
+.container
+    flex: 1 0 0
+
+a 
+    color: $orange 
+    &:hover 
+        color: $orange
 
 @import 'blocks/header'
 @import 'blocks/banner'
 @import 'blocks/text'
-@import 'blocks/content'
 @import 'blocks/section'
 @import 'blocks/preferences'
 @import 'blocks/signform'
@@ -39,3 +47,14 @@ body
 @import 'blocks/stats' 
 @import 'blocks/sidebar'
 @import 'blocks/footer'
+@import 'blocks/blog'
+@import 'blocks/article'
+@import 'blocks/privacy'
+@import 'blocks/countries'
+@import 'blocks/breadcrumbs'
+@import 'blocks/job-details'
+@import 'blocks/resume'
+@import 'blocks/alerts'
+@import 'blocks/marketing'
+@import 'blocks/search-company'
+

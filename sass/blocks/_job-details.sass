@@ -1,0 +1,126 @@
+.job-details
+    padding-top: 20px
+    padding-bottom: 50px
+    &__breadcrumbs
+        display: flex
+        justify-content: space-between
+    .section
+        margin-top: 0px
+        padding: 25px 40px 30px
+    h1 
+        font-size: 26px
+        font-weight: 400
+        letter-spacing: 0.69px
+        color: #000000
+    
+    &__tags
+        margin-top: 7.5px
+        display: flex
+        flex-wrap: wrap 
+        padding-bottom: 12px
+        border-bottom: 1px solid #e2e2e2
+        margin-bottom: 10px
+    &__tag
+        padding-right: 25px
+        display: flex
+        align-items: center
+        line-height: 22px
+        &-image
+            margin-right: 4px
+            height: 11px
+            width: 11px
+        &-text 
+            display: inline
+            margin: 0
+            font-size: 13px
+            letter-spacing: 0.35px
+            color: #364955
+    &__content
+        font-size: 16px
+        line-height: 22px
+        letter-spacing: 0.3px
+    &__button
+        width: 100%
+        background: $orange
+        display: block
+        padding: 10px 10px 7px
+        text-align: center 
+        border-radius: 4px
+        font-size: 18px
+        max-width: 310px
+        color: white
+        margin-bottom: 12px
+        line-height: 22px
+        &:hover 
+            color: white 
+            background: $hoverorange
+            text-decoration: none
+        img 
+            height: 18px
+            transform: translateY(-3px)
+            margin-left: 2px
+        span 
+            font-size: 12px
+            letter-spacing: 0.32px
+            display: block
+    &__link
+        display: block
+        letter-spacing: 0.48px
+        font-size: 18px
+        padding: 22px 0px
+        &:nth-child(2)
+            border-bottom: 1px solid #e2e2e2
+            border-top: 1px solid #e2e2e2
+        img 
+            height: 18px
+            margin-right: 2px
+            transform: translateY(-1px)
+    &__companylink
+        max-width: 194px
+        margin: 20px auto 10px
+        position: relative
+        display: block
+    
+    &__companyimg
+        width: 100%
+    &__sidebar
+        width: 100%
+        max-width: 370px
+    
+
+// @media (min-width: 1200px)
+
+@media (max-width: 1199px)
+    .job-details
+        .section
+            padding: 25px 20px 30px
+
+@media (max-width: 991px)
+    .job-details
+        padding-bottom: 30px
+        &__breadcrumbs
+            flex-direction: column-reverse
+            div 
+                &:nth-child(2)
+                    margin-bottom: 15px
+        h1
+            font-size: 23px
+        .section
+            margin-bottom: 20px
+
+// @media (max-width: 767px)
+
+@media (max-width: 575px)
+    .job-details
+        h1 
+            font-size: 21px
+        &__tags
+            flex-direction: column
+  
+        &__companylink
+            max-width: 170px
+
+@media (max-width: 359px)  
+    .job-details
+        &__companylink
+            max-width: 160px

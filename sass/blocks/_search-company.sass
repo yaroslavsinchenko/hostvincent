@@ -1,0 +1,61 @@
+.search-company
+    &__form 
+        display: flex
+        align-items: center
+    .section
+        padding: 25px 40px 30px
+    &__input, &__select
+        background: white 
+        height: 41px
+        width: 260px
+        border: 1px solid #9baebc
+        font-size: 14px
+        border-radius: 4px
+        letter-spacing: 0.37px
+        padding: 0 16px
+        margin-right: 8px
+        &:focus 
+            border-color: $orange   
+            outline: none
+        &::placeholder
+            color:  #9baebc
+    &__select
+        color:  #9baebc
+    &__button
+        height: 41px
+        text-align: center 
+        padding: 7px 71px
+        font-size: 14px
+        color: white 
+        border-radius: 4px 
+        background: $orange
+        min-height: 41px
+        border: 2px solid $orange
+
+
+// @media (min-width: 1200px)
+
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+    .search-company
+        .section
+            padding: 30px 25px 30px
+        &__form
+            flex-direction: column
+            justify-content: center 
+        &__input
+            margin-bottom: 21px
+        &__select
+            margin-bottom: 31px
+        &__input, &__select, &__button
+            margin-right: 0
+            width: 100%
+            max-width: 450px
+
+// @media (max-width: 767px)
+
+// @media (max-width: 575px)
+
+// @media (max-width: 359px)    
+        

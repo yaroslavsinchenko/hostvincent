@@ -100,58 +100,48 @@
         </div>
       </header>
 
-      <!-- ALERTS -->
-      <section class="alerts">
-        <div class="alert alert-primary" role="alert">
-          This is a primary alert—check it out!
-        </div>
-        <div class="alert alert-danger" role="alert">
-          This is a danger alert—check it out!
-        </div>
-      </section>
-
       <!-- LOGIN FORM -->
       <div class="container">
         <div class="row signform">
           <div class="col-12 d-flex justify-content-center">
             <div class="signform__wrapper">
-              <h1 class="signform__header login">Login</h1>
+              <h1 class="signform__header contact">Contact Us</h1>
               <form action="" class="signup__form">
                 <input
+                  required
+                  type="text"
+                  class="signform__input"
+                  placeholder="First Name"
+                />
+                <input
+                  required
+                  type="text"
+                  class="signform__input"
+                  placeholder="Last Name"
+                />
+                <input
+                  required
+                  type="text"
+                  class="signform__input"
+                  placeholder="Company Name"
+                />
+                <input
+                  required
                   type="email"
                   class="signform__input"
                   placeholder="Email"
                 />
-                <input
-                  type="password"
-                  class="signform__input"
-                  placeholder="Password"
-                />
 
-                <div class="signform__bottomlinks">
-                  <div class="signform__input-wrapper">
-                    <input
-                      class="signform__input-field"
-                      type="checkbox"
-                      value="term"
-                      id="term"
-                    />
-                    <label class="signform__input-label checkbox" for="term">
-                      Keep me logged in
-                    </label>
-                  </div>
-                  <div class="signform__controls">
-                    <a href="" class="signform__input-link"
-                      >Lost your password?</a
-                    >
-                    \
-                    <a href="" class="signform__input-link">Sign Up</a>
-                  </div>
-                </div>
+                <textarea
+                  class="signform__textarea"
+                  rows="10"
+                  cols="30"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
 
-                <div class="signform__buttons">
-                  <button class="signform__button">Login</button>
-                  <a class="signform__button gray">Cancel</a>
+                <div class="text-center">
+                  <button class="signform__button contact">Submit</button>
                 </div>
               </form>
             </div>

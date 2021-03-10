@@ -1,43 +1,38 @@
-.jobs 
-    padding-top: 20px
+.resume
+    padding-top: 30px
     padding-bottom: 52px
+    &__item
+        padding: 22px 40px
+        border-bottom: 1px solid #e8e8e8
     &__photo
         &-link
-            width: 75px
-            height: 75px
+            width: 110px
+            height: 110px
             display: flex
             align-items: center 
             justify-content: center
             max-width: 100%
         &-image
             max-width: 100%
-        &-col 
-            display: flex 
-            justify-content: center
-    &__item
-        border-bottom: 1px solid #e8e8e8
-        padding: 30px 15px 40px 40px
-        &.samepadding
-            padding: 21px 40px
+    &__content
+        padding-left: 30px
     &__header
-        font-size: 17.5px
-        letter-spacing: 0.43px
-        font-weight: 600
+        font-size: 20px
+        letter-spacing: 0.2px
         color: $orange
-        margin: 0
+        margin-bottom: 10px
         &:hover 
             color: $orange
             text-decoration: underline
-    &__content
-        padding-left: 30px
     &__tags
         margin-top: 7.5px
         display: flex
         flex-wrap: wrap 
     &__tag
-        padding-right: 44px
+        padding-right: 12px
         display: flex
         align-items: center
+        line-height: 22px
         &-image
             margin-right: 4px
             height: 11px
@@ -50,46 +45,27 @@
             font-size: 13px
             letter-spacing: 0.35px
             color: #364955
-        &.withlowrightpadding
-            padding-right: 12px
-    &__text
-        font-size: 16px
-        color: #353535
-        letter-spacing: 0.43px
-        line-height: 22px
-        margin: 0
-        margin-top: 9px
-    &__cityrow
-        padding: 5px 40px 8px
-    &__cityheader
-        font-size: 16px
-        color: #9baebc
-        margin-bottom: 10px
-    &__citytext
-        line-height: 22px
-        letter-spacing: 0.3px
-        margin-bottom: 0
+
 
 // @media (min-width: 1200px)
 
 @media (max-width: 1199px)
-    .jobs
+    .resume
         &__content
             padding-left: 35px
+        &__item
+            padding: 22px 20px
 
 @media (max-width: 991px)
-    .jobs
+    .resume
         &__content
             padding-left: 30px
         &__item
-            &.samepadding
-                padding-left: 25px
-                padding-right: 25px
-        &__cityrow
-            padding: 5px 25px 8px
+            padding-left: 25px
+            padding-right: 25px
 
 @media (max-width: 767px)
-    .jobs
+    .resume
         &__photo-col
             display: none
         &__content
@@ -100,6 +76,5 @@
             display: none
         &__tags
             flex-direction: column
-
         
 // @media (max-width: 359px)

@@ -1,6 +1,5 @@
 .signform
-    padding: 120px 15px 50px
-    flex: 1 0 0
+    padding: 0px 15px 50px
     &__wrapper
         border: 1px solid #e2e2e2
         border-radius: 4px
@@ -8,6 +7,7 @@
         width: 100%
         background: white 
         padding: 30px
+        margin-top: 30px
     &__header
         font-size: 26px
         letter-spacing: 0.69px
@@ -16,26 +16,39 @@
         height: 31px
         &.login
             margin-bottom: 18px
-    &__form
-        position: relative
+        &.contact
+            margin-bottom: 2px
+        &-icon
+            transform: translateY(-2.5px)
+            margin-right: 3px
+    &__textarea
+        width: 100%
+        margin-top: 20px
+        margin-bottom: 0
+        display: block
+        font-size: 14px
+        letter-spacing: 0.37px
+        border-radius: 4px
+        border: solid 1px #acacac
+        background-color: #ffffff
+        padding: 11px 16px
+        line-height: 18px
     &__input
         width: 100%
         margin-top: 20px
         font-size: 14px
         letter-spacing: 0.37px
-        height: 39px
+        height: 41px
         border-radius: 4px
         border: solid 1px #acacac
         background-color: #ffffff
         padding: 0 16px
-        color: black
         &:focus
             border-color: $orange
             outline: none
         &-wrapper
             display: flex
             padding-left: 16px
-            margin-top: 3px
         &-label
             margin: 0
             font-size: 14.7px   
@@ -51,20 +64,24 @@
                 font-size: 14px
                 padding-left: 3px
                 height: auto
-        &-field
-            display: none
         &-link 
             font-size: 16px
             letter-spacing: 0.43px
             color: $orange
+            display: inline-block
             &:hover 
                 color: $orange
+        &-field
+            display: none
     &__bottomlinks
-        margin-top: 20px
+        margin-top: 23px
         display: flex
         justify-content: space-between
         align-items: center
         flex-wrap: wrap
+        &.reset
+            justify-content: flex-end
+            margin-top: 20px
     &__explanation
         display: block
         font-size: 12px
@@ -74,8 +91,8 @@
         padding-left: 17px
         margin-bottom: 18px
     &__button
-        margin-top: 46px
-        padding: 15.5px 72px
+        margin-top: 15px
+        padding: 15.5px
         min-width: 200px
         font-size: 18px
         font-weight: 400
@@ -84,6 +101,8 @@
         border-radius: 4px
         border: 2px solid $orange
         text-decoration: none
+        max-width: 204px
+        text-align: center
         &:hover, &:focus 
             outline: none
             box-shadow: none
@@ -98,14 +117,17 @@
             &:hover, &:focus 
                 background: #9BAEBC
                 color: #fff
+        &.contact
+            margin-top: 42px
     &__buttons
         display: flex
         justify-content: space-between
-        margin-top: 10px
+
+        margin-top: 40px
     &__controls
         padding-left: 16px
-        margin-top: 3px
         height: 24px
+
 
 .signform input[type="radio"] + label::before 
     border: 1px solid #373737
@@ -144,7 +166,7 @@
 
 .signform
     input[type="checkbox"] + label:before
-        transform: translate(-3px, 0.4px)
+        transform: translate(-3px, 0.6px)
 
 // @media (min-width: 1200px)
 
@@ -156,35 +178,42 @@
     .signform
         &__input
             &-link
-                font-size: 14px
+                font-size: 15px
 
 @media (max-width: 575px)
     .signform
-        padding: 105px 15px 50px
         &__wrapper
-            padding: 25px
+            padding: 25px 20px 35px
+            margin-top: 25px
         &__header
-            font-size: 23px
+            font-size: 24px
             height: auto
         &__button
-            margin-top: 35px
-            font-size: 16px
-            padding: 14px 72px
-            min-width: 210px
+            font-size: 17px
+            padding: 14px
+            min-width: 225px
             text-align: center
             &.gray
                 margin-top: 10px
         &__buttons
             flex-direction: column
             align-items: center
-            margin-top: 0px
+            margin-top: 25px
+        &__bottomlinks
+            line-height: 27px
+            margin-top: 20px
+            &.reset
+                justify-content: flex-start
+            
 
 @media (max-width: 359px)
     .signform
+        &__wrapper
+            padding: 25px 15px 35px
         &__header
-            font-size: 22px
+            font-size: 23px
         &__button
-            margin-top: 32px
-            min-width: 190px
-            padding: 12px 65px
+            padding: 12px
+        &__controls
+            height: auto
 

@@ -4,9 +4,9 @@
     border-radius: 6px
     padding-bottom: 30px
     margin-top: 25px
-    &.latestjobs
+    &.latestpage
         margin-top: 0
-        padding-top: 13px
+        padding-top: 15px
     &__header
         font-size: 26px
         font-weight: 400
@@ -16,9 +16,9 @@
         border-bottom: 1px solid #e6e6e6
         margin-bottom: 0px
         padding: 25px 15px 23px 40px
-    &__interaction
-        padding-top: 50px
-        padding-bottom: 10px
+        img
+            margin-left: 5px
+            margin-bottom: 2px
     &__button
         width: 243px
         max-width: 45%
@@ -29,7 +29,6 @@
         border-radius: 2px
         border: 2px solid $orange
         color: $orange
-
         &:hover 
             background: $orange
             color: white
@@ -48,12 +47,36 @@
         font-size: 16px
         font-weight: 400
         line-height: 1.63
-        letter-spacing: 4px
+        letter-spacing: 3.8px
         display: inline-block
         color: $orange
         &:hover 
             color: $orange
-        
+    &__page
+        background-color: white
+        color: $orange
+        text-decoration: none
+        text-align: center 
+        border: 1px solid $orange
+        padding: 5px 8px
+        margin: 5px 2px
+        font-size: 14px
+        letter-spacing: 0.37px
+        min-width: 33px
+        &:hover
+            color: white 
+            background: $orange
+            text-decoration: none   
+        &.current
+            background: $orange
+            color: white
+
+    &__pagination
+        display: flex 
+        justify-content: center
+        flex-wrap: wrap
+        padding: 0px 40px
+        margin-top: 50px
         
 // @media (min-width: 1200px)
 
@@ -67,10 +90,12 @@
             &.compsection
                 margin-left: 15px
                 margin-bottom: 30px
+        &__pagination
+            padding: 0px 25px
 
 @media (max-width: 767px)
     .section
-        &.latestjobs
+        &.latestpage
             max-width: 410px
             width: 100%
             padding-bottom: 40px
@@ -93,5 +118,18 @@
     .section
         &__header
             font-size: 24px
+        &__page
+            font-size: 12px
+            padding: 4px 4px 3px
+            min-width: 25px
+            min-height: 29px
+            display: flex
+            align-items: center 
+            justify-content: center
+
 
 // @media (max-width: 359px)
+
+
+
+    

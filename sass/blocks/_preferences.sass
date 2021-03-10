@@ -1,4 +1,9 @@
 .preferences
+    &.regions
+        padding-bottom: 0
+        .preferences__list
+            border-bottom: none
+            padding-bottom: 0px
     &__list
         list-style-type: none
         display: flex
@@ -6,10 +11,6 @@
         margin-bottom: 0px  
         padding: 23px 15px 25px 40px
         border-bottom: 1px solid #e6e6e6 
-    &__flag
-        display: inline-block
-        width: 16px
-        height: 16px
     &__link
         line-height: normal
         font-size: 12.5px
@@ -19,10 +20,19 @@
             color: $orange
     &__item
         line-height: 19px
-        width: 25%
+        width: 20%
         margin-bottom: 7px
         padding-right: 10px
- 
+    &__morelink
+        display: inline-block
+        line-height: 26px
+        font-size: 12.5px
+        color: $orange
+        padding: 5px 15px 20px 40px
+
+        
+
+
 // @media (min-width: 1200px)
 
 // @media (max-width: 1199px)
