@@ -1,6 +1,6 @@
 .banner
     height: 350px
-    background: #fbf4ed
+    background: url('../images/mainbanner.jpg') no-repeat
     border-bottom: 1px solid #e2e2e2
     position: relative
     .container
@@ -25,6 +25,7 @@
         min-height: 47px
         box-sizing: content-box    
         margin-bottom: 0px
+        color: white
     &__select
         width: 25%
         height: 58px
@@ -110,9 +111,12 @@
 
 @media (max-width: 991px)
     .banner
+        background: #fbf4edba
         height: 440px
         &.smallbanner
             height: 350px
+        &__header
+            color: black
         &__select
             width: 100%
             border: 1px solid $orange
@@ -132,7 +136,9 @@
             justify-content: center
         
         
-
+@media (min-width: 1900px)
+    .banner
+        background-size: cover
 // @media (max-width: 767px)
 
 @media (max-width: 575px)
