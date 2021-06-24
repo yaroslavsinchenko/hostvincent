@@ -4,9 +4,20 @@
     border-radius: 6px
     padding-bottom: 30px
     margin-top: 25px
+    &.merged
+        margin-top: 0px
+        border-radius: 0px
+        border-bottom-width: 0px
+        &.stats
+            border-bottom-width: 1px
+            border-bottom-right-radius: 6px
+            border-bottom-left-radius: 6px
     &.latestpage
         margin-top: 0
         padding-top: 15px
+        border-top-left-radius: 0px
+        border-top-right-radius: 0px
+        border-top-width: 0px
     &__header
         font-size: 26px
         font-weight: 400
@@ -96,10 +107,9 @@
 @media (max-width: 767px)
     .section
         &.latestpage
-            max-width: 410px
             width: 100%
             padding-bottom: 40px
-            margin-top: 5px
+            border-top-width: 1px
         &__header
             padding-left: 0px
             padding-right: 0px

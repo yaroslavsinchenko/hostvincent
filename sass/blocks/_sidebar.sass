@@ -1,8 +1,12 @@
 .sidebar
     width: 100%
-    border-radius: 6px
+    border-bottom-left-radius: 6px
+    border-bottom-right-radius: 6px
+    border: solid 1px #e6e6e6
+    border-top-width: 0px
     max-width: 360px
-    padding: 0 40px
+    padding: 13px 40px 0px
+    background: white
     &__block
         padding: 15px 0px
         .show
@@ -16,15 +20,13 @@
         display: block
         outline: none
         color: #9baebc
-        border-radius: 4px
         padding-left: 32px
         padding-right: 10px
         background-color: #fff
-        border: 1px solid #9baebc
+        border: 1px solid $orange
         background-position: 10px 11.5px
         background-repeat: no-repeat
         background-size: 15px
-        margin-bottom: 12px
         appearance: none
         font-size: 14px
         &:nth-child(1)
@@ -38,8 +40,6 @@
         height: 41px
         outline: none
         border: 1px solid $orange
-        border-radius: 4px
-        margin-top: 8px
         color: white 
         background: $orange
         &:hover 
@@ -56,7 +56,7 @@
         border: solid 1px #9baebc
         display: block
         padding: 0px 25px 0px
-        margin-top: 35px
+        margin-top: 30px
         border-radius: 4px
         margin-bottom: 30px
         line-height: 18.5px
@@ -77,16 +77,21 @@
 
 @media (max-width: 1199px)
     .sidebar
-        padding: 0 10px 0
+        padding: 21px 15px 0
     
 
 // @media (max-width: 991px)
+//     .sidebar
+//         padding: 21px 
 
         
 @media (max-width: 767px)
     .sidebar
-        margin-bottom: 5px
-        padding: 10px 40px 0
+        padding: 21px 25px 0
+        max-width: none
+        border-bottom-left-radius: 0px
+        border-bottom-right-radius: 0px
+        border-bottom-width: 0px
         &__block
             padding: 0
             &#filters
@@ -98,11 +103,11 @@
 
 @media (max-width: 575px)
     .sidebar
-        padding: 10px 35px 0
+        padding: 21px 35px 0
 
 @media (max-width: 349px)
     .sidebar
-        padding: 10px 10px 0
+        padding: 21px 10px 0
         
 
 .filter
